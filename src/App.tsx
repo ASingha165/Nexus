@@ -5,9 +5,9 @@ import { Footer } from './components/layout/Footer';
 import { AmbientGlow } from './components/layout/AmbientGlow';
 import { HeroSection } from './components/landing/HeroSection';
 import { DecisionLabSection } from './sections/decision-lab/DecisionLabSection';
+import { ConstellationSection } from './sections/constellation/ConstellationSection';
 import {
   AboutSection,
-  ConstellationSection,
   ProjectsSection,
   CreativeArchiveSection,
   ContactSection,

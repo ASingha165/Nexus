@@ -58,3 +58,4 @@ export const ScenarioBrief: React.FC<ScenarioBriefProps> = ({ scenario, selected
     </div>
   );
 };
+

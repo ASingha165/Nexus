@@ -45,11 +45,11 @@ export const RealTimeMetricProjection: React.FC<RealTimeMetricProjectionProps> =
 
           {/* Cost Envelope */}
           <div className="bg-surface-container-low p-space-md rounded-lg flex flex-col border border-outline-variant/20">
-            <span className="font-label-caps text-[11px] text-outline">AWS COST ENVELOPE</span>
+            <span className="font-label-caps text-[11px] text-outline">AWS COST (ILLUSTRATIVE)</span>
             <span className="font-mono-metric text-mono-metric text-primary mt-1">
               {selectedOption.metrics.cost}
             </span>
-            <span className="font-label-caps text-[10px] text-on-surface-variant">Bounded Envelope</span>
+            <span className="font-label-caps text-[10px] text-on-surface-variant">Estimated scenario model</span>
             <div className="w-full bg-surface-container-highest h-1 rounded-full mt-2 overflow-hidden">
               <div
                 className="bg-primary h-full transition-all duration-500"

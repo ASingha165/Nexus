@@ -56,41 +56,6 @@ export const AboutSection: React.FC = () => {
   );
 };
 
-export const ConstellationSection: React.FC = () => {
-  return (
-    <section id="constellation" className="relative w-full max-w-[1440px] mx-auto px-margin-mobile lg:px-margin py-space-2xl border-t border-outline-variant/30 flex flex-col gap-space-xl">
-      <div className="flex flex-col gap-space-xs">
-        <div className="flex items-center gap-space-xs font-label-caps text-label-caps text-tertiary uppercase tracking-widest">
-          <span className="material-symbols-outlined text-[16px]" aria-hidden="true">hub</span>
-          <span>TOPOLOGY // 02 • THE CONSTELLATION</span>
-        </div>
-        <h2 className="font-display-lg text-display-lg text-on-surface">Interactive Knowledge Matrix</h2>
-        <p className="font-body-lg text-body-lg text-on-surface-variant italic">
-          “An interconnected universe of technical domains, cloud services, and conceptual frameworks.”
-        </p>
-      </div>
-
-      <div className="w-full bg-surface-container-lowest p-space-lg rounded-2xl border border-outline-variant/40 flex flex-col items-center justify-center min-h-[360px] text-center gap-space-md relative overflow-hidden">
-        <div className="absolute inset-0 opacity-15 bg-[radial-gradient(circle_at_50%_50%,_rgba(160,120,255,0.25)_0%,_transparent_70%)] pointer-events-none" />
-        <span className="material-symbols-outlined text-primary text-[48px]" aria-hidden="true">grain</span>
-        <div className="flex flex-col max-w-xl">
-          <span className="font-headline-sm text-headline-sm text-on-surface font-semibold">Autonomous Node Clustering</span>
-          <p className="font-body-sm text-body-sm text-on-surface-variant mt-2 leading-relaxed">
-            The full interactive Constellation graph will dynamically cluster AWS Services, AI Inference pipelines, and Systems Architecture heuristics into reactive force-directed nodes.
-          </p>
-        </div>
-        <div className="flex flex-wrap items-center justify-center gap-space-xs font-mono-code text-[11px] text-outline pt-2">
-          <span className="px-space-sm py-1 rounded bg-surface-container-high text-secondary">AMAZON_BEDROCK</span>
-          <span className="px-space-sm py-1 rounded bg-surface-container-high text-primary">ECS_FARGATE</span>
-          <span className="px-space-sm py-1 rounded bg-surface-container-high text-tertiary">SQS_FIFO</span>
-          <span className="px-space-sm py-1 rounded bg-surface-container-high text-on-surface">DYNAMODB</span>
-          <span className="px-space-sm py-1 rounded bg-surface-container-high text-secondary-fixed">CLOUDFRONT</span>
-        </div>
-      </div>
-    </section>
-  );
-};
-
 export const ProjectsSection: React.FC = () => {
   const verifiedProjects = [
     {
@@ -116,6 +81,14 @@ export const ProjectsSection: React.FC = () => {
       desc: 'Fault-tolerant travel discovery platform designed with Multi-AZ redundancy and CloudFront edge caching to preserve navigation guidance during transient network partition events.',
       tech: ['Amazon CloudFront', 'Multi-AZ ALB', 'DynamoDB', 'TypeScript'],
       status: 'SHIPPED'
+    },
+    {
+      title: 'Vow-Vibe-AI',
+      tag: 'GENERATIVE TONE SYNTHESIS',
+      badge: 'AI ORCHESTRATION',
+      desc: 'Context-aware generative language system crafting tailored wedding vows and ceremonial speeches with nuanced emotional tone controls and stylistic tuning.',
+      tech: ['Python', 'Next.js', 'Generative AI', 'REST APIs'],
+      status: 'ACTIVE'
     }
   ];
 
@@ -132,7 +105,7 @@ export const ProjectsSection: React.FC = () => {
         </p>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-gutter">
         {verifiedProjects.map((p, i) => (
           <div key={i} className="bg-surface-container-low p-space-lg rounded-xl border border-outline-variant/30 flex flex-col justify-between gap-space-md hover:-translate-y-1 transition-all">
             <div className="flex flex-col gap-space-xs">
