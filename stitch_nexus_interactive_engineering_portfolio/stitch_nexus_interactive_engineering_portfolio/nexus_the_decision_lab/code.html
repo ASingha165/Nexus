@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&amp;family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&amp;family=Space+Grotesk:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+          "primary-container": "#a078ff",
+          "tertiary-fixed-dim": "#7bd0ff",
+          "error": "#ffb4ab",
+          "surface-container-high": "#282a33",
+          "background": "#11131b",
+          "secondary-fixed": "#acedff",
+          "inverse-surface": "#e1e1ee",
+          "on-error": "#690005",
+          "on-tertiary": "#00354a",
+          "on-surface-variant": "#cbc3d7",
+          "tertiary-container": "#009bd1",
+          "on-secondary-fixed-variant": "#004e5c",
+          "surface-container-lowest": "#0c0e16",
+          "on-primary-fixed": "#23005c",
+          "on-tertiary-container": "#002d40",
+          "error-container": "#93000a",
+          "surface-bright": "#373942",
+          "on-error-container": "#ffdad6",
+          "on-surface": "#e1e1ee",
+          "tertiary-fixed": "#c4e7ff",
+          "surface": "#11131b",
+          "secondary-container": "#03b5d3",
+          "surface-container": "#1d1f28",
+          "on-primary-container": "#340080",
+          "outline": "#958ea0",
+          "on-primary-fixed-variant": "#5516be",
+          "inverse-primary": "#6d3bd7",
+          "surface-variant": "#32343e",
+          "on-background": "#e1e1ee",
+          "secondary": "#4cd7f6",
+          "surface-tint": "#d0bcff",
+          "on-primary": "#3c0091",
+          "primary": "#d0bcff",
+          "primary-fixed": "#e9ddff",
+          "inverse-on-surface": "#2e3039",
+          "on-tertiary-fixed": "#001e2c",
+          "secondary-fixed-dim": "#4cd7f6",
+          "outline-variant": "#494454",
+          "surface-container-low": "#191b24",
+          "on-secondary-fixed": "#001f26",
+          "on-secondary": "#003640",
+          "primary-fixed-dim": "#d0bcff",
+          "surface-container-highest": "#32343e",
+          "on-tertiary-fixed-variant": "#004c69",
+          "surface-dim": "#11131b",
+          "tertiary": "#7bd0ff",
+          "on-secondary-container": "#00424e"
+        },
+        "borderRadius": {
+          "DEFAULT": "0.125rem",
+          "lg": "0.25rem",
+          "xl": "0.5rem",
+          "full": "0.75rem"
+        },
+        "spacing": {
+          "margin-mobile": "1.25rem",
+          "space-xs": "0.25rem",
+          "space-sm": "0.5rem",
+          "space-3xl": "6rem",
+          "margin": "3rem",
+          "gutter-sm": "1rem",
+          "gutter": "1.5rem",
+          "space-xl": "2.5rem",
+          "space-lg": "1.5rem",
+          "space-md": "1rem",
+          "space-2xl": "4rem"
+        },
+        "fontFamily": {
+          "display-xl": [
+            "Playfair Display"
+          ],
+          "body-lg": [
+            "Space Grotesk"
+          ],
+          "display-lg-mobile": [
+            "Playfair Display"
+          ],
+          "display-lg": [
+            "Playfair Display"
+          ],
+          "body-md": [
+            "Space Grotesk"
+          ],
+          "label-caps": [
+            "JetBrains Mono"
+          ],
+          "mono-metric": [
+            "JetBrains Mono"
+          ],
+          "headline-lg": [
+            "Space Grotesk"
+          ],
+          "display-xl-mobile": [
+            "Playfair Display"
+          ],
+          "label-sub": [
+            "Space Grotesk"
+          ],
+          "mono-code": [
+            "JetBrains Mono"
+          ],
+          "headline-md": [
+            "Space Grotesk"
+          ],
+          "headline-sm": [
+            "Space Grotesk"
+          ],
+          "body-sm": [
+            "Space Grotesk"
+          ]
+        },
+        "fontSize": {
+          "display-xl": [
+            "4.5rem",
+            {
+              "lineHeight": "5rem",
+              "letterSpacing": "-0.03em",
+              "fontWeight": "600"
+            }
+          ],
+          "body-lg": [
+            "1.125rem",
+            {
+              "lineHeight": "1.75rem",
+              "fontWeight": "400"
+            }
+          ],
+          "display-lg-mobile": [
+            "2.25rem",
+            {
+              "lineHeight": "2.75rem",
+              "letterSpacing": "-0.015em",
+              "fontWeight": "500"
+            }
+          ],
+          "display-lg": [
+            "3.25rem",
+            {
+              "lineHeight": "3.75rem",
+              "letterSpacing": "-0.02em",
+              "fontWeight": "500"
+            }
+          ],
+          "body-md": [
+            "1rem",
+            {
+              "lineHeight": "1.6rem",
+              "fontWeight": "400"
+            }
+          ],
+          "label-caps": [
+            "0.75rem",
+            {
+              "lineHeight": "1rem",
+              "letterSpacing": "0.08em",
+              "fontWeight": "500"
+            }
+          ],
+          "mono-metric": [
+            "1.75rem",
+            {
+              "lineHeight": "2rem",
+              "letterSpacing": "-0.02em",
+              "fontWeight": "500"
+            }
+          ],
+          "headline-lg": [
+            "2rem",
+            {
+              "lineHeight": "2.5rem",
+              "letterSpacing": "-0.02em",
+              "fontWeight": "600"
+            }
+          ],
+          "display-xl-mobile": [
+            "2.75rem",
+            {
+              "lineHeight": "3.25rem",
+              "letterSpacing": "-0.02em",
+              "fontWeight": "600"
+            }
+          ],
+          "label-sub": [
+            "0.75rem",
+            {
+              "lineHeight": "1rem",
+              "fontWeight": "500"
+            }
+          ],
+          "mono-code": [
+            "0.875rem",
+            {
+              "lineHeight": "1.5rem",
+              "fontWeight": "400"
+            }
+          ],
+          "headline-md": [
+            "1.5rem",
+            {
+              "lineHeight": "2rem",
+              "letterSpacing": "-0.015em",
+              "fontWeight": "500"
+            }
+          ],
+          "headline-sm": [
+            "1.25rem",
+            {
+              "lineHeight": "1.75rem",
+              "letterSpacing": "-0.01em",
+              "fontWeight": "500"
+            }
+          ],
+          "body-sm": [
+            "0.875rem",
+            {
+              "lineHeight": "1.4rem",
+              "fontWeight": "400"
+            }
+          ]
+        }
+      },
+    },
+  }</script></head><body class="bg-surface font-body-md text-body-md text-on-surface selection:bg-primary-container selection:text-on-primary-container min-h-screen flex flex-col"><header class="fixed top-0 left-0 right-0 z-50 bg-surface-container-lowest/80 backdrop-blur-xl border-b border-outline-variant/40"><div class="h-16 max-w-[1440px] mx-auto px-gutter-sm lg:px-margin flex items-center justify-between gap-gutter"><div class="flex items-center gap-space-md shrink-0"><img alt="NEXUS Brand Emblem" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1WFX4qoSJ76PPGo0UkP9Q-QHk1UA1Ir1mu139i4xEre0jGrYieyKyw0UwPISJawkbOBn5vTGh7woo2KcxPLUcrRzatsHBvo_-hxN23EYWe_6KScQ3rk-lvSH9mrtoJc4oD_ej-A_4cC2GQBL66j71DgHLjQUUg8AXOYmfvTpPihtKjF2BolT4Kmz3KYtRY5SpoFfqXPPVDmLrYnXsOEqkifcQxsJYk0K2-wlXr02yG_"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm font-semibold tracking-wider text-on-surface uppercase">NEXUS</span><span class="font-label-caps text-label-caps text-on-surface-variant text-[10px] tracking-widest uppercase">SYS.ARCH v2.6</span></div><div class="hidden xl:flex items-center gap-space-xs px-space-sm py-0.5 rounded bg-surface-container-high border border-outline-variant/60 font-label-caps text-label-caps text-tertiary"><span class="w-1.5 h-1.5 rounded-full bg-secondary animate-pulse"></span><span>TELEMETRY: NOMINAL</span></div></div><nav class="hidden lg:flex items-center gap-space-xs p-1 rounded-lg bg-surface-container-low/70 border border-outline-variant/30" data-active-classes="bg-primary-container text-on-primary-container font-semibold rounded-lg shadow-[0_0_12px_rgba(160,120,255,0.35)]"><a class="px-space-md py-1.5 rounded text-on-surface-variant hover:text-on-surface transition-colors font-body-sm text-body-sm" data-path="overview" href="#">Overview</a><a class="px-space-md py-1.5 rounded text-on-surface-variant hover:text-on-surface transition-colors font-body-sm text-body-sm" data-path="about" href="#">About</a><a aria-current="page" class="px-space-md py-1.5 transition-colors relative flex items-center bg-primary-container text-on-primary-container font-semibold rounded-lg shadow-[0_0_12px_rgba(160,120,255,0.35)]" data-path="decision-lab" href="#">Decision Lab<span class="ml-1.5 w-1.5 h-1.5 rounded-full bg-primary inline-block"></span></a><a class="px-space-md py-1.5 rounded text-on-surface-variant hover:text-on-surface transition-colors font-body-sm text-body-sm" data-path="constellation" href="#">Constellation</a><a class="px-space-md py-1.5 rounded text-on-surface-variant hover:text-on-surface transition-colors font-body-sm text-body-sm" data-path="projects" href="#">Projects</a><a class="px-space-md py-1.5 rounded text-on-surface-variant hover:text-on-surface transition-colors font-body-sm text-body-sm" data-path="creative-archive" href="#">Creative Archive</a><a class="px-space-md py-1.5 rounded text-on-surface-variant hover:text-on-surface transition-colors font-body-sm text-body-sm" data-path="contact" href="#">Contact</a></nav><div class="flex items-center gap-space-md shrink-0"><div class="hidden sm:flex flex-col text-right font-label-caps text-label-caps"><span class="text-tertiary-fixed-dim text-[11px]">AWS BUILDER '26</span><span class="text-outline text-[10px]">SYNCED // UTC-0</span></div><a class="hidden md:inline-flex items-center gap-space-xs px-space-md py-1.5 rounded bg-primary-container text-on-primary-container font-label-caps text-label-caps hover:bg-primary transition-all border border-primary-fixed/20 shadow-[0_0_16px_rgba(160,120,255,0.25)]" data-path="decision-lab" href="#"><span class="material-symbols-outlined text-[16px]">terminal</span><span>LAUNCH LAB</span></a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-16 flex-1 bg-surface"><div class="flex flex-col w-full">
+<div class="relative w-full overflow-hidden bg-surface-container-lowest py-space-xl">
+<div class="absolute inset-0 pointer-events-none opacity-20 bg-[radial-gradient(circle_at_80%_20%,_rgba(160,120,255,0.15)_0%,_transparent_60%)]"></div>
+<div class="absolute inset-0 pointer-events-none opacity-10 bg-[radial-gradient(circle_at_20%_80%,_rgba(76,215,246,0.15)_0%,_transparent_60%)]"></div>
+<div class="max-w-[1440px] mx-auto px-gutter-sm lg:px-margin flex flex-col gap-space-xl relative z-10">
+<!-- Console Meta Header -->
+<div class="flex flex-col gap-space-sm pb-space-md bg-surface-container-low/60 p-space-lg rounded-xl">
+<div class="flex flex-wrap items-center justify-between gap-space-sm font-label-caps text-label-caps text-on-surface-variant">
+<div class="flex items-center gap-space-xs text-tertiary-fixed-dim">
+<span class="material-symbols-outlined text-[16px]">terminal</span>
+<span class="tracking-wider">SIMULATION CONSOLE // SCENARIO EXECUTION // RUNTIME: PROD_EAST_01</span>
+</div>
+<div class="flex items-center gap-space-md">
+<span class="flex items-center gap-1.5 px-space-sm py-0.5 rounded bg-surface-container-highest text-secondary text-label-caps">
+<span class="w-2 h-2 rounded-full bg-secondary animate-ping"></span>
+<span>STATUS: ACTIVE INGESTION</span>
+</span>
+<span class="text-on-surface font-mono-metric text-[13px] tracking-tight">T-ELAPSED: <span class="text-tertiary" id="timerVal">00:04:12</span></span>
+<span class="text-on-surface-variant text-label-caps">SYS_ENTROPY: <span class="text-error font-mono-code font-bold">24%</span></span>
+</div>
+</div>
+<div class="flex flex-col lg:flex-row lg:items-end justify-between gap-space-md pt-space-xs">
+<div>
+<span class="font-label-caps text-label-caps text-primary tracking-widest uppercase">AWS STUDENT BUILDER CHALLENGE 2026 // RE-ARCH LAB</span>
+<h1 class="font-display-lg text-display-lg text-on-surface tracking-tight mt-1">THE DECISION LAB</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant italic">“Every engineering decision has a consequence.”</p>
+</div>
+<div class="flex items-center gap-space-xs bg-surface-container-highest/80 p-1 rounded-lg shrink-0">
+<button class="px-space-md py-1.5 rounded-lg font-label-caps text-label-caps bg-primary text-on-primary font-semibold shadow-md transition-all flex items-center gap-1">
+<span>001: 100K CONCURRENT SPIKE</span>
+</button>
+<button class="px-space-md py-1.5 rounded-lg font-label-caps text-label-caps text-on-surface-variant hover:text-on-surface transition-all">
+<span>002: DISTRIBUTED CONSISTENCY</span>
+</button>
+<button class="px-space-md py-1.5 rounded-lg font-label-caps text-label-caps text-on-surface-variant hover:text-on-surface transition-all">
+<span>003: MULTI-REGION DR</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Main Operational Split -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter">
+<!-- Left: Architectural Options Selection (7 Columns) -->
+<div class="lg:col-span-7 flex flex-col gap-space-lg">
+<!-- Scenario Brief Box -->
+<div class="bg-surface-container p-space-lg rounded-xl relative overflow-hidden">
+<div class="absolute top-0 right-0 p-space-sm font-label-caps text-label-caps text-outline opacity-40">TELEMETRY_REF: #INCR-88219</div>
+<div class="flex items-center gap-space-xs font-label-caps text-label-caps text-secondary mb-1">
+<span class="material-symbols-outlined text-[18px]">crisis_alert</span>
+<span>SCENARIO 001: INSTANTANEOUS SURGE</span>
+</div>
+<p class="font-body-lg text-body-lg text-on-surface font-medium leading-relaxed mt-2">
+              Your AI application suddenly receives <span class="text-secondary font-mono-code font-bold">100,000 requests per second</span>. Downstream inference latency spikes from <span class="text-tertiary font-mono-code">42ms</span> to <span class="text-error font-mono-code">1,280ms</span>. Memory pressure on model servers hits <span class="text-error font-mono-code">89%</span>.
+            </p>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2">
+              Select an architectural strategy to stabilize the cluster before AWS budget ceilings or customer SLA penalties activate.
+            </p>
+</div>
+<!-- Cards Stack -->
+<div class="flex flex-col gap-space-md" id="cardsContainer">
+<!-- Option A -->
+<div class="strategy-card group cursor-pointer bg-surface-container-low hover:bg-surface-container p-space-lg rounded-xl transition-all duration-200" id="card-A" onclick="selectCard('A')">
+<div class="flex items-start justify-between gap-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-lg bg-surface-container-high flex items-center justify-center font-label-caps text-label-caps text-on-surface-variant group-hover:text-primary transition-colors">
+                    A
+                  </div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary-fixed transition-colors">RAW PERFORMANCE</h3>
+<span class="font-label-caps text-label-caps text-outline">AGGRESSIVE OVER-PROVISIONING • GPU RESERVES</span>
+</div>
+</div>
+<span class="radio-indicator w-4 h-4 rounded-full bg-surface-container-high flex items-center justify-center">
+<span class="w-2 h-2 rounded-full bg-transparent"></span>
+</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-3">
+                Auto-scale inference cluster immediately using warm standbys, pre-emptively spinning 240 G5 instances with local KV-cache replication.
+              </p>
+<div class="mt-4 flex flex-wrap items-center gap-space-xs font-label-caps text-label-caps text-on-surface-variant">
+<span class="px-2 py-0.5 rounded bg-surface-container-high text-tertiary">LATENCY: &lt;50ms</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-high text-error">COST: 4.2x SURGE</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-high text-outline">COLD-START RISK: HIGH</span>
+</div>
+</div>
+<!-- Option B -->
+<div class="strategy-card group cursor-pointer bg-surface-container-low hover:bg-surface-container p-space-lg rounded-xl transition-all duration-200" id="card-B" onclick="selectCard('B')">
+<div class="flex items-start justify-between gap-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-lg bg-surface-container-high flex items-center justify-center font-label-caps text-label-caps text-on-surface-variant group-hover:text-primary transition-colors">
+                    B
+                  </div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary-fixed transition-colors">STRICT COST EFFICIENCY</h3>
+<span class="font-label-caps text-label-caps text-outline">BACKPRESSURE • TOKEN PRUNING • RATE CAPPING</span>
+</div>
+</div>
+<span class="radio-indicator w-4 h-4 rounded-full bg-surface-container-high flex items-center justify-center">
+<span class="w-2 h-2 rounded-full bg-transparent"></span>
+</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-3">
+                Queue throttling via API Gateway usage plans, deterministic token window compaction, and strict rejection of ingress past baseline SLA bounds.
+              </p>
+<div class="mt-4 flex flex-wrap items-center gap-space-xs font-label-caps text-label-caps text-on-surface-variant">
+<span class="px-2 py-0.5 rounded bg-surface-container-high text-secondary">COST: FLAT LINE</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-high text-error">DROP RATE: 12.4%</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-high text-on-surface">AVG LATENCY: 340ms</span>
+</div>
+</div>
+<!-- Option C -->
+<div class="strategy-card group cursor-pointer bg-surface-container-low hover:bg-surface-container p-space-lg rounded-xl transition-all duration-200" id="card-C" onclick="selectCard('C')">
+<div class="flex items-start justify-between gap-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-lg bg-surface-container-high flex items-center justify-center font-label-caps text-label-caps text-on-surface-variant group-hover:text-primary transition-colors">
+                    C
+                  </div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary-fixed transition-colors">RELIABILITY &amp; CIRCUIT BREAKER</h3>
+<span class="font-label-caps text-label-caps text-outline">GRACEFUL DEGRADATION • HEURISTIC FALLBACK</span>
+</div>
+</div>
+<span class="radio-indicator w-4 h-4 rounded-full bg-surface-container-high flex items-center justify-center">
+<span class="w-2 h-2 rounded-full bg-transparent"></span>
+</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-3">
+                Trigger distributed circuit breaker. Route 60% of complex queries to lightweight cached heuristics; shed all real-time visual telemetry pipelines.
+              </p>
+<div class="mt-4 flex flex-wrap items-center gap-space-xs font-label-caps text-label-caps text-on-surface-variant">
+<span class="px-2 py-0.5 rounded bg-surface-container-high text-secondary">CRASH RISK: 0.00%</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-high text-tertiary">MODEL FIDELITY: 91%</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-high text-primary">SLA PRESERVED</span>
+</div>
+</div>
+<!-- Option D (Pre-selected) -->
+<div class="strategy-card group cursor-pointer bg-surface-container-high p-space-lg rounded-xl shadow-lg ring-1 ring-primary transition-all duration-200" id="card-D" onclick="selectCard('D')">
+<div class="flex items-start justify-between gap-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-lg bg-primary-container text-on-primary-container flex items-center justify-center font-label-caps text-label-caps font-bold">
+                    D
+                  </div>
+<div>
+<div class="flex items-center gap-space-xs">
+<h3 class="font-headline-sm text-headline-sm text-primary">BALANCED EVENT-DRIVEN SCALE</h3>
+<span class="px-1.5 py-0.5 rounded text-[10px] bg-primary text-on-primary font-label-caps font-semibold">SELECTED</span>
+</div>
+<span class="font-label-caps text-label-caps text-tertiary-fixed-dim">SQS BUFFERING • STEP-SCALED ECS • DYNAMODB LOCKS</span>
+</div>
+</div>
+<span class="radio-indicator w-4 h-4 rounded-full bg-primary flex items-center justify-center">
+<span class="w-2 h-2 rounded-full bg-on-primary"></span>
+</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface mt-3">
+                Ingest spikes into distributed Amazon SQS FIFO queues with adaptive backpressure, orchestrating elastic worker pools on ECS Fargate alongside warm bedrock inference reservations.
+              </p>
+<div class="mt-4 flex flex-wrap items-center gap-space-xs font-label-caps text-label-caps">
+<span class="px-2 py-0.5 rounded bg-surface-container-lowest text-secondary">ELASTIC ADAPTATION: 94%</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-lowest text-on-surface">LATENCY JITTER: 120ms</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-lowest text-primary">COST BOUNDED</span>
+</div>
+</div>
+</div>
+<!-- Bottom Console Progress / Action Row -->
+<div class="flex flex-col sm:flex-row items-center justify-between gap-space-md pt-space-xs">
+<div class="flex items-center gap-space-sm">
+<div class="flex gap-1.5">
+<div class="w-8 h-1.5 rounded-full bg-primary"></div>
+<div class="w-8 h-1.5 rounded-full bg-surface-container-high"></div>
+<div class="w-8 h-1.5 rounded-full bg-surface-container-high"></div>
+</div>
+<span class="font-label-caps text-label-caps text-outline">STEP 1 OF 3 DECISIONS COMPLETED</span>
+</div>
+<div class="flex items-center gap-space-sm w-full sm:w-auto">
+<button class="w-full sm:w-auto px-space-md py-2 rounded-lg bg-surface-container text-on-surface-variant hover:text-on-surface font-label-caps text-label-caps transition-colors" onclick="resetSimulation()">
+                RESET SIMULATION
+              </button>
+<button class="w-full sm:w-auto px-space-lg py-2.5 rounded-lg bg-primary text-on-primary font-headline-sm text-body-sm font-semibold shadow-lg hover:bg-primary-container hover:text-on-primary-container transition-all flex items-center justify-center gap-space-xs" onclick="commitDecision()">
+<span class="material-symbols-outlined text-[18px]">verified</span>
+<span>COMMIT DECISION</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Right: Live Technical Analysis & Topology Radar (5 Columns) -->
+<div class="lg:col-span-5 flex flex-col gap-space-lg">
+<!-- Telemetry HUD & Multi-Variable Metrics -->
+<div class="bg-surface-container p-space-lg rounded-xl flex flex-col gap-space-md">
+<div class="flex items-center justify-between pb-space-xs">
+<div class="flex items-center gap-space-xs font-label-caps text-label-caps text-tertiary">
+<span class="material-symbols-outlined text-[18px]">monitoring</span>
+<span>REAL-TIME METRIC PROJECTION</span>
+</div>
+<span class="font-label-caps text-[10px] text-outline uppercase">SIM_MODE // LIVE</span>
+</div>
+<!-- Metrics Matrix Grid -->
+<div class="grid grid-cols-2 gap-space-sm">
+<div class="bg-surface-container-low p-space-md rounded-lg flex flex-col">
+<span class="font-label-caps text-[11px] text-outline">P99 LATENCY IMPACT</span>
+<span class="font-mono-metric text-mono-metric text-secondary mt-1" id="metric-latency">62ms</span>
+<span class="font-label-caps text-[10px] text-on-surface-variant">SLA Bound: &lt;150ms</span>
+<div class="w-full bg-surface-container-highest h-1 rounded-full mt-2 overflow-hidden">
+<div class="bg-secondary h-full w-[85%] transition-all duration-500" id="bar-latency"></div>
+</div>
+</div>
+<div class="bg-surface-container-low p-space-md rounded-lg flex flex-col">
+<span class="font-label-caps text-[11px] text-outline">AWS COST ENVELOPE</span>
+<span class="font-mono-metric text-mono-metric text-primary mt-1" id="metric-cost">$680/hr</span>
+<span class="font-label-caps text-[10px] text-on-surface-variant">Bounded vs $420 Base</span>
+<div class="w-full bg-surface-container-highest h-1 rounded-full mt-2 overflow-hidden">
+<div class="bg-primary h-full w-[65%] transition-all duration-500" id="bar-cost"></div>
+</div>
+</div>
+<div class="bg-surface-container-low p-space-md rounded-lg flex flex-col">
+<span class="font-label-caps text-[11px] text-outline">FAULT TOLERANCE</span>
+<span class="font-mono-metric text-mono-metric text-tertiary mt-1" id="metric-fault">99.995%</span>
+<span class="font-label-caps text-[10px] text-on-surface-variant">Zero dropped packets</span>
+<div class="w-full bg-surface-container-highest h-1 rounded-full mt-2 overflow-hidden">
+<div class="bg-tertiary h-full w-[98%] transition-all duration-500" id="bar-fault"></div>
+</div>
+</div>
+<div class="bg-surface-container-low p-space-md rounded-lg flex flex-col">
+<span class="font-label-caps text-[11px] text-outline">COMPUTE ELASTICITY</span>
+<span class="font-mono-metric text-mono-metric text-on-surface mt-1" id="metric-elasticity">94%</span>
+<span class="font-label-caps text-[10px] text-on-surface-variant">Dynamic allocation</span>
+<div class="w-full bg-surface-container-highest h-1 rounded-full mt-2 overflow-hidden">
+<div class="bg-secondary-fixed-dim h-full w-[94%] transition-all duration-500" id="bar-elasticity"></div>
+</div>
+</div>
+</div>
+<!-- Architectural Topology Flow Diagram (SVG Visualization) -->
+<div class="mt-2 bg-surface-container-lowest p-space-md rounded-lg flex flex-col gap-2">
+<div class="flex items-center justify-between text-label-caps font-label-caps text-outline text-[11px]">
+<span>TOPOLOGY PATHWAY</span>
+<span class="text-secondary font-mono-code" id="topologyLabel">PATH: SQS_FIFO → ECS_FARGATE → BEDROCK</span>
+</div>
+<div class="w-full py-2">
+<svg class="w-full h-auto text-on-surface" fill="none" viewbox="0 0 460 90" xmlns="http://www.w3.org/2000/svg">
+<!-- Connection Vectors -->
+<path class="text-outline-variant opacity-60" d="M 65 45 L 140 45" stroke="currentColor" stroke-dasharray="3 3"></path>
+<path class="text-secondary" d="M 195 45 L 265 45" stroke="currentColor" stroke-width="1.5"></path>
+<path class="text-primary" d="M 320 45 L 390 45" stroke="currentColor" stroke-width="1.5"></path>
+<!-- Node 1: API GW -->
+<g transform="translate(10, 20)">
+<rect class="text-surface-container-high" fill="currentColor" height="50" rx="4" width="60"></rect>
+<text class="text-outline text-[9px] font-mono-code" fill="currentColor" text-anchor="middle" x="30" y="24">INGRESS</text>
+<text class="text-on-surface text-[10px] font-mono-code font-bold" fill="currentColor" text-anchor="middle" x="30" y="38">API GW</text>
+</g>
+<!-- Node 2: Buffer / Router -->
+<g transform="translate(140, 20)">
+<rect class="text-surface-container-highest" fill="currentColor" height="50" id="topo-node-2" rx="4" width="60"></rect>
+<text class="text-secondary text-[9px] font-mono-code" fill="currentColor" text-anchor="middle" x="30" y="24">BUFFER</text>
+<text class="text-on-surface text-[10px] font-mono-code font-bold" fill="currentColor" text-anchor="middle" x="30" y="38">SQS FIFO</text>
+</g>
+<!-- Node 3: Processing -->
+<g transform="translate(265, 20)">
+<rect class="text-surface-container-highest" fill="currentColor" height="50" id="topo-node-3" rx="4" width="60"></rect>
+<text class="text-primary text-[9px] font-mono-code" fill="currentColor" text-anchor="middle" x="30" y="24">WORKER</text>
+<text class="text-on-surface text-[10px] font-mono-code font-bold" fill="currentColor" text-anchor="middle" x="30" y="38">ECS / FARG</text>
+</g>
+<!-- Node 4: Storage / Foundation -->
+<g transform="translate(390, 20)">
+<rect class="text-surface-container-high" fill="currentColor" height="50" rx="4" width="60"></rect>
+<text class="text-tertiary text-[9px] font-mono-code" fill="currentColor" text-anchor="middle" x="30" y="24">LLM SINK</text>
+<text class="text-on-surface text-[10px] font-mono-code font-bold" fill="currentColor" text-anchor="middle" x="30" y="38">BEDROCK</text>
+</g>
+</svg>
+</div>
+</div>
+</div>
+<!-- Architectural Commentary / Ankit Singha Insights -->
+<div class="bg-surface-container-low p-space-lg rounded-xl flex flex-col gap-space-sm relative overflow-hidden">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-on-primary text-[18px]">psychology</span>
+</div>
+<div>
+<h4 class="font-headline-sm text-[15px] font-semibold text-on-surface">Architectural Rationale</h4>
+<span class="font-label-caps text-label-caps text-secondary text-[11px]">ANKIT SINGHA • AWS BUILDER 2026</span>
+</div>
+</div>
+<p class="font-body-md text-body-sm text-on-surface-variant leading-relaxed italic mt-1" id="rationale-text">
+              “Sudden 100K surges instantly kill synchronous architectures due to connection pool starvation at the model boundary. By introducing SQS FIFO with partitioned dedup keys, we transform an unpredictable existential shock into a manageable, bounded queue that auto-scaled ECS nodes consume without bankrupting the organization.”
+            </p>
+<div class="flex items-center justify-between pt-space-xs text-label-caps text-[11px] text-outline">
+<span>PATTERN: DECOUPLED INGESTION</span>
+<span>CONFIDENCE FACTOR: 98.4%</span>
+</div>
+</div>
+<!-- Secondary Quick-Switch Action Card -->
+<div class="bg-surface-container p-space-md rounded-xl flex items-center justify-between gap-space-md">
+<div class="flex flex-col">
+<span class="font-label-caps text-label-caps text-outline">NEXT CHALLENGE READY</span>
+<span class="font-headline-sm text-body-sm font-semibold text-on-surface">SCENARIO 002: DISTRIBUTED DB SHARDING</span>
+</div>
+<button class="px-space-md py-1.5 rounded-lg bg-surface-container-highest hover:bg-surface-container-high text-tertiary hover:text-on-surface font-label-caps text-label-caps transition-all shrink-0">
+              SWITCH LAB →
+            </button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Interactive JavaScript Engine -->
+<script>
+    const scenarioData = {
+      A: {
+        latency: '48ms',
+        cost: '$1,760/hr',
+        fault: '96.2%',
+        elasticity: '82%',
+        barLatency: '95%',
+        barCost: '95%',
+        barFault: '65%',
+        barElasticity: '82%',
+        topology: 'PATH: API GW → WARM G5 GPU POOL → BEDROCK',
+        rationale: 'Over-provisioning guarantees baseline latency under 50ms, but costs accelerate exponentially. If the surge continues past 45 minutes, AWS budget alarms will trip, causing severe financial hemorrhaging.'
+      },
+      B: {
+        latency: '340ms',
+        cost: '$420/hr',
+        fault: '87.6%',
+        elasticity: '30%',
+        barLatency: '35%',
+        barCost: '20%',
+        barFault: '40%',
+        barElasticity: '30%',
+        topology: 'PATH: API GW (RATE LIMITED) → THROTTLE SHED',
+        rationale: 'Strict backpressure prioritizes the cloud bill above user experience. Dropping 12% of high-intent requests preserves the backend, but breaks commercial SLAs and damages system trust.'
+      },
+      C: {
+        latency: '110ms',
+        cost: '$510/hr',
+        fault: '99.9%',
+        elasticity: '75%',
+        barLatency: '70%',
+        barCost: '35%',
+        barFault: '95%',
+        barElasticity: '75%',
+        topology: 'PATH: API GW → CIRCUIT BREAKER → CACHED HEURISTICS',
+        rationale: 'Circuit breaker degradation is the gold standard for survival. By sacrificing marginal LLM generation quality for pure availability, the platform stays up with predictable economics.'
+      },
+      D: {
+        latency: '62ms',
+        cost: '$680/hr',
+        fault: '99.995%',
+        elasticity: '94%',
+        barLatency: '85%',
+        barCost: '65%',
+        barFault: '98%',
+        barElasticity: '94%',
+        topology: 'PATH: SQS_FIFO → ECS_FARGATE → BEDROCK',
+        rationale: 'Sudden 100K surges instantly kill synchronous architectures due to connection pool starvation at the model boundary. By introducing SQS FIFO with partitioned dedup keys, we transform an unpredictable existential shock into a manageable, bounded queue that auto-scaled ECS nodes consume without bankrupting the organization.'
+      }
+    };
+
+    function selectCard(cardKey) {
+      // Clear visual state from all cards
+      ['A', 'B', 'C', 'D'].forEach(key => {
+        const card = document.getElementById(`card-${key}`);
+        card.classList.remove('bg-surface-container-high', 'ring-1', 'ring-primary', 'shadow-lg');
+        card.classList.add('bg-surface-container-low');
+        
+        const badge = card.querySelector('.radio-indicator');
+        if (badge) {
+          badge.className = 'radio-indicator w-4 h-4 rounded-full bg-surface-container-high flex items-center justify-center';
+          badge.innerHTML = '<span class="w-2 h-2 rounded-full bg-transparent"></span>';
+        }
+      });
+
+      // Activate chosen card
+      const targetCard = document.getElementById(`card-${cardKey}`);
+      targetCard.classList.remove('bg-surface-container-low');
+      targetCard.classList.add('bg-surface-container-high', 'ring-1', 'ring-primary', 'shadow-lg');
+
+      const activeBadge = targetCard.querySelector('.radio-indicator');
+      if (activeBadge) {
+        activeBadge.className = 'radio-indicator w-4 h-4 rounded-full bg-primary flex items-center justify-center';
+        activeBadge.innerHTML = '<span class="w-2 h-2 rounded-full bg-on-primary"></span>';
+      }
+
+      // Update Telemetry Metrics smoothly
+      const data = scenarioData[cardKey];
+      document.getElementById('metric-latency').innerText = data.latency;
+      document.getElementById('metric-cost').innerText = data.cost;
+      document.getElementById('metric-fault').innerText = data.fault;
+      document.getElementById('metric-elasticity').innerText = data.elasticity;
+
+      document.getElementById('bar-latency').style.width = data.barLatency;
+      document.getElementById('bar-cost').style.width = data.barCost;
+      document.getElementById('bar-fault').style.width = data.barFault;
+      document.getElementById('bar-elasticity').style.width = data.barElasticity;
+
+      document.getElementById('topologyLabel').innerText = data.topology;
+      document.getElementById('rationale-text').innerHTML = `&ldquo;${data.rationale}&rdquo;`;
+    }
+
+    function resetSimulation() {
+      selectCard('D');
+    }
+
+    function commitDecision() {
+      const commitBtn = event.currentTarget;
+      const originalText = commitBtn.innerHTML;
+      commitBtn.innerHTML = '<span class="material-symbols-outlined text-[18px] animate-spin">refresh</span><span>EVALUATING TOPOLOGY...</span>';
+      commitBtn.disabled = true;
+
+      setTimeout(() => {
+        commitBtn.innerHTML = '<span class="material-symbols-outlined text-[18px]">check_circle</span><span>SIMULATION VERIFIED</span>';
+        commitBtn.classList.remove('bg-primary');
+        commitBtn.classList.add('bg-secondary-container', 'text-on-secondary-container');
+        setTimeout(() => {
+          commitBtn.innerHTML = originalText;
+          commitBtn.classList.add('bg-primary');
+          commitBtn.classList.remove('bg-secondary-container', 'text-on-secondary-container');
+          commitBtn.disabled = false;
+        }, 2200);
+      }, 1000);
+    }
+
+    // Elapsed timer incrementer
+    let seconds = 252;
+    setInterval(() => {
+      seconds++;
+      const mins = String(Math.floor(seconds / 60)).padStart(2, '0');
+      const secs = String(seconds % 60).padStart(2, '0');
+      const timer = document.getElementById('timerVal');
+      if (timer) timer.innerText = `00:${mins}:${secs}`;
+    }, 1000);
+  </script>
+</div></main><footer class="w-full bg-surface-container-lowest border-t border-outline-variant/40 mt-auto"><div class="max-w-[1440px] mx-auto px-gutter-sm lg:px-margin py-space-xl flex flex-col gap-space-lg"><div class="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-space-md"><div class="flex flex-col"><div class="flex items-center gap-space-sm"><span class="font-headline-sm text-headline-sm font-semibold tracking-wide text-on-surface">ANKIT SINGHA</span><span class="font-label-caps text-label-caps text-secondary px-space-xs py-0.5 rounded bg-surface-container-high border border-outline-variant/60">AI &amp; SYSTEMS ARCHITECT</span></div><span class="font-body-sm text-body-sm text-on-surface-variant mt-1">NEXUS: The Architecture of a Mind — Engineered for AWS Student Builder Challenge 2026.</span></div><div class="flex flex-wrap items-center gap-space-sm font-label-caps text-label-caps text-on-surface-variant"><div class="flex items-center gap-1.5 px-space-sm py-1 rounded bg-surface-container-high border border-outline-variant/50 text-tertiary"><span class="material-symbols-outlined text-[14px]">speed</span><span>LATENCY: 12ms</span></div><div class="flex items-center gap-1.5 px-space-sm py-1 rounded bg-surface-container-high border border-outline-variant/50 text-secondary"><span class="material-symbols-outlined text-[14px]">grid_view</span><span>LOC // 37.7749° N, 122.4194° W</span></div><div class="flex items-center gap-1.5 px-space-sm py-1 rounded bg-surface-container-high border border-outline-variant/50 text-on-surface"><span class="material-symbols-outlined text-[14px]">cloud_done</span><span>AWS SBC-2026</span></div></div></div><div class="h-px w-full bg-outline-variant/20"></div><div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-md font-label-caps text-label-caps text-on-surface-variant"><div class="flex items-center gap-space-lg"><a class="hover:text-primary transition-colors flex items-center gap-1" href="https://github.com" rel="noreferrer" target="_blank"><span>GITHUB</span></a><a class="hover:text-primary transition-colors flex items-center gap-1" href="https://linkedin.com" rel="noreferrer" target="_blank"><span>LINKEDIN</span></a><a class="hover:text-primary transition-colors flex items-center gap-1" href="mailto:ankit@nexus.dev"><span>EMAIL</span></a><a class="hover:text-primary transition-colors flex items-center gap-1" data-path="overview" href="#"><span>SYS_MANIFEST</span></a></div><div class="text-[11px] text-outline">© 2026 ANKIT SINGHA • KERNEL RESTRICTED • ALL RIGHTS RESERVED</div></div></div></footer></body></html>

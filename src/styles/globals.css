@@ -1,0 +1,142 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ─────────────────────────────────────────────
+ * BASE LAYER — Global resets & defaults
+ * ───────────────────────────────────────────── */
+@layer base {
+  html,
+  body {
+    @apply m-0 p-0;
+  }
+
+  body {
+    @apply bg-surface text-on-surface font-body-md text-body-md min-h-screen antialiased;
+    overscroll-behavior: none;
+  }
+
+  /* Text selection colors */
+  ::selection {
+    @apply bg-primary-container text-on-primary-container;
+  }
+
+  /* Hide scrollbar (match Stitch design) */
+  ::-webkit-scrollbar {
+    display: none;
+  }
+
+  html {
+    scrollbar-width: none;
+    scroll-behavior: smooth;
+  }
+
+  /* Respect reduced motion preference */
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+}
+
+/* ─────────────────────────────────────────────
+ * COMPONENT LAYER — Reusable utility classes
+ * ───────────────────────────────────────────── */
+@layer components {
+  /* Frosted glass effect for header */
+  .glass-surface {
+    @apply bg-surface-container-lowest/80 backdrop-blur-xl;
+  }
+
+  /* Container constraint */
+  .nexus-container {
+    @apply max-w-container mx-auto px-gutter-sm lg:px-margin;
+  }
+
+  /* Section label pattern: icon + uppercase mono text */
+  .section-label {
+    @apply flex items-center gap-space-xs font-label-caps text-label-caps tracking-widest uppercase;
+  }
+
+  /* Metric card base */
+  .metric-card {
+    @apply p-space-lg rounded-xl bg-surface-container-low shadow-sm flex flex-col gap-space-xs transition-transform hover:-translate-y-0.5;
+  }
+
+  /* Strategy option card base */
+  .strategy-card {
+    @apply group cursor-pointer bg-surface-container-low hover:bg-surface-container p-space-lg rounded-xl transition-all duration-200;
+  }
+
+  /* Strategy card selected state */
+  .strategy-card-selected {
+    @apply bg-surface-container-high ring-1 ring-primary shadow-lg;
+  }
+
+  /* Console/telemetry bar */
+  .console-bar {
+    @apply p-space-sm rounded-lg bg-surface-container flex items-center justify-between font-label-caps text-label-caps text-on-surface-variant;
+  }
+
+  /* Status badge with optional pulse */
+  .status-badge {
+    @apply flex items-center gap-space-xs px-space-sm py-0.5 rounded bg-surface-container-high border border-outline-variant/60 font-label-caps text-label-caps;
+  }
+
+  /* Telemetry chip */
+  .telemetry-chip {
+    @apply flex items-center gap-1.5 px-space-sm py-1 rounded bg-surface-container-high border border-outline-variant/50 font-label-caps text-label-caps;
+  }
+
+  /* Material icon sizing helper */
+  .icon-sm {
+    @apply text-[14px];
+  }
+
+  .icon-md {
+    @apply text-[18px];
+  }
+
+  .icon-lg {
+    @apply text-[20px];
+  }
+
+  .icon-xl {
+    @apply text-[24px];
+  }
+}
+
+/* ─────────────────────────────────────────────
+ * UTILITIES LAYER — Custom utility extensions
+ * ───────────────────────────────────────────── */
+@layer utilities {
+  /* Primary glow shadow for CTAs */
+  .shadow-primary-glow {
+    box-shadow: 0 0 16px rgba(160, 120, 255, 0.25);
+  }
+
+  .shadow-primary-glow-hover {
+    box-shadow: 0 0 20px rgba(160, 120, 255, 0.4);
+  }
+
+  /* Secondary glow for telemetry elements */
+  .shadow-secondary-glow {
+    box-shadow: 0 0 16px -2px rgba(76, 215, 246, 0.25);
+  }
+
+  /* Active nav glow */
+  .shadow-nav-active {
+    box-shadow: 0 0 12px rgba(160, 120, 255, 0.35);
+  }
+
+  /* SVG node glow filter simulation */
+  .glow-node {
+    filter: drop-shadow(0 0 6px currentColor);
+  }
+}
+

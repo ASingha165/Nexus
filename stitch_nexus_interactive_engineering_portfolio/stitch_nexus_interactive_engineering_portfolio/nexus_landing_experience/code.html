@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&amp;family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&amp;family=Space+Grotesk:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+          "primary-container": "#a078ff",
+          "tertiary-fixed-dim": "#7bd0ff",
+          "error": "#ffb4ab",
+          "surface-container-high": "#282a33",
+          "background": "#11131b",
+          "secondary-fixed": "#acedff",
+          "inverse-surface": "#e1e1ee",
+          "on-error": "#690005",
+          "on-tertiary": "#00354a",
+          "on-surface-variant": "#cbc3d7",
+          "tertiary-container": "#009bd1",
+          "on-secondary-fixed-variant": "#004e5c",
+          "surface-container-lowest": "#0c0e16",
+          "on-primary-fixed": "#23005c",
+          "on-tertiary-container": "#002d40",
+          "error-container": "#93000a",
+          "surface-bright": "#373942",
+          "on-error-container": "#ffdad6",
+          "on-surface": "#e1e1ee",
+          "tertiary-fixed": "#c4e7ff",
+          "surface": "#11131b",
+          "secondary-container": "#03b5d3",
+          "surface-container": "#1d1f28",
+          "on-primary-container": "#340080",
+          "outline": "#958ea0",
+          "on-primary-fixed-variant": "#5516be",
+          "inverse-primary": "#6d3bd7",
+          "surface-variant": "#32343e",
+          "on-background": "#e1e1ee",
+          "secondary": "#4cd7f6",
+          "surface-tint": "#d0bcff",
+          "on-primary": "#3c0091",
+          "primary": "#d0bcff",
+          "primary-fixed": "#e9ddff",
+          "inverse-on-surface": "#2e3039",
+          "on-tertiary-fixed": "#001e2c",
+          "secondary-fixed-dim": "#4cd7f6",
+          "outline-variant": "#494454",
+          "surface-container-low": "#191b24",
+          "on-secondary-fixed": "#001f26",
+          "on-secondary": "#003640",
+          "primary-fixed-dim": "#d0bcff",
+          "surface-container-highest": "#32343e",
+          "on-tertiary-fixed-variant": "#004c69",
+          "surface-dim": "#11131b",
+          "tertiary": "#7bd0ff",
+          "on-secondary-container": "#00424e"
+        },
+        "borderRadius": {
+          "DEFAULT": "0.125rem",
+          "lg": "0.25rem",
+          "xl": "0.5rem",
+          "full": "0.75rem"
+        },
+        "spacing": {
+          "margin-mobile": "1.25rem",
+          "space-xs": "0.25rem",
+          "space-sm": "0.5rem",
+          "space-3xl": "6rem",
+          "margin": "3rem",
+          "gutter-sm": "1rem",
+          "gutter": "1.5rem",
+          "space-xl": "2.5rem",
+          "space-lg": "1.5rem",
+          "space-md": "1rem",
+          "space-2xl": "4rem"
+        },
+        "fontFamily": {
+          "display-xl": [
+            "Playfair Display"
+          ],
+          "body-lg": [
+            "Space Grotesk"
+          ],
+          "display-lg-mobile": [
+            "Playfair Display"
+          ],
+          "display-lg": [
+            "Playfair Display"
+          ],
+          "body-md": [
+            "Space Grotesk"
+          ],
+          "label-caps": [
+            "JetBrains Mono"
+          ],
+          "mono-metric": [
+            "JetBrains Mono"
+          ],
+          "headline-lg": [
+            "Space Grotesk"
+          ],
+          "display-xl-mobile": [
+            "Playfair Display"
+          ],
+          "label-sub": [
+            "Space Grotesk"
+          ],
+          "mono-code": [
+            "JetBrains Mono"
+          ],
+          "headline-md": [
+            "Space Grotesk"
+          ],
+          "headline-sm": [
+            "Space Grotesk"
+          ],
+          "body-sm": [
+            "Space Grotesk"
+          ]
+        },
+        "fontSize": {
+          "display-xl": [
+            "4.5rem",
+            {
+              "lineHeight": "5rem",
+              "letterSpacing": "-0.03em",
+              "fontWeight": "600"
+            }
+          ],
+          "body-lg": [
+            "1.125rem",
+            {
+              "lineHeight": "1.75rem",
+              "fontWeight": "400"
+            }
+          ],
+          "display-lg-mobile": [
+            "2.25rem",
+            {
+              "lineHeight": "2.75rem",
+              "letterSpacing": "-0.015em",
+              "fontWeight": "500"
+            }
+          ],
+          "display-lg": [
+            "3.25rem",
+            {
+              "lineHeight": "3.75rem",
+              "letterSpacing": "-0.02em",
+              "fontWeight": "500"
+            }
+          ],
+          "body-md": [
+            "1rem",
+            {
+              "lineHeight": "1.6rem",
+              "fontWeight": "400"
+            }
+          ],
+          "label-caps": [
+            "0.75rem",
+            {
+              "lineHeight": "1rem",
+              "letterSpacing": "0.08em",
+              "fontWeight": "500"
+            }
+          ],
+          "mono-metric": [
+            "1.75rem",
+            {
+              "lineHeight": "2rem",
+              "letterSpacing": "-0.02em",
+              "fontWeight": "500"
+            }
+          ],
+          "headline-lg": [
+            "2rem",
+            {
+              "lineHeight": "2.5rem",
+              "letterSpacing": "-0.02em",
+              "fontWeight": "600"
+            }
+          ],
+          "display-xl-mobile": [
+            "2.75rem",
+            {
+              "lineHeight": "3.25rem",
+              "letterSpacing": "-0.02em",
+              "fontWeight": "600"
+            }
+          ],
+          "label-sub": [
+            "0.75rem",
+            {
+              "lineHeight": "1rem",
+              "fontWeight": "500"
+            }
+          ],
+          "mono-code": [
+            "0.875rem",
+            {
+              "lineHeight": "1.5rem",
+              "fontWeight": "400"
+            }
+          ],
+          "headline-md": [
+            "1.5rem",
+            {
+              "lineHeight": "2rem",
+              "letterSpacing": "-0.015em",
+              "fontWeight": "500"
+            }
+          ],
+          "headline-sm": [
+            "1.25rem",
+            {
+              "lineHeight": "1.75rem",
+              "letterSpacing": "-0.01em",
+              "fontWeight": "500"
+            }
+          ],
+          "body-sm": [
+            "0.875rem",
+            {
+              "lineHeight": "1.4rem",
+              "fontWeight": "400"
+            }
+          ]
+        }
+      },
+    },
+  }</script></head><body class="bg-surface font-body-md text-body-md text-on-surface selection:bg-primary-container selection:text-on-primary-container min-h-screen flex flex-col"><header class="fixed top-0 left-0 right-0 z-50 bg-surface-container-lowest/80 backdrop-blur-xl border-b border-outline-variant/40"><div class="h-16 max-w-[1440px] mx-auto px-gutter-sm lg:px-margin flex items-center justify-between gap-gutter"><div class="flex items-center gap-space-md shrink-0"><img alt="NEXUS Brand Emblem" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1WFX4qoSJ76PPGo0UkP9Q-QHk1UA1Ir1mu139i4xEre0jGrYieyKyw0UwPISJawkbOBn5vTGh7woo2KcxPLUcrRzatsHBvo_-hxN23EYWe_6KScQ3rk-lvSH9mrtoJc4oD_ej-A_4cC2GQBL66j71DgHLjQUUg8AXOYmfvTpPihtKjF2BolT4Kmz3KYtRY5SpoFfqXPPVDmLrYnXsOEqkifcQxsJYk0K2-wlXr02yG_"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm font-semibold tracking-wider text-on-surface uppercase">NEXUS</span><span class="font-label-caps text-label-caps text-on-surface-variant text-[10px] tracking-widest uppercase">SYS.ARCH v2.6</span></div><div class="hidden xl:flex items-center gap-space-xs px-space-sm py-0.5 rounded bg-surface-container-high border border-outline-variant/60 font-label-caps text-label-caps text-tertiary"><span class="w-1.5 h-1.5 rounded-full bg-secondary animate-pulse"></span><span>TELEMETRY: NOMINAL</span></div></div><nav class="hidden lg:flex items-center gap-space-xs p-1 rounded-lg bg-surface-container-low/70 border border-outline-variant/30" data-active-classes="bg-primary-container text-on-primary-container font-semibold rounded-lg shadow-[0_0_12px_rgba(160,120,255,0.35)]"><a aria-current="page" class="px-space-md py-1.5 transition-colors bg-primary-container text-on-primary-container font-semibold rounded-lg shadow-[0_0_12px_rgba(160,120,255,0.35)]" data-path="overview" href="#">Overview</a><a class="px-space-md py-1.5 rounded text-on-surface-variant hover:text-on-surface transition-colors font-body-sm text-body-sm" data-path="about" href="#">About</a><a class="px-space-md py-1.5 rounded text-on-surface-variant hover:text-on-surface transition-colors font-body-sm text-body-sm relative flex items-center" data-path="decision-lab" href="#">Decision Lab<span class="ml-1.5 w-1.5 h-1.5 rounded-full bg-primary inline-block"></span></a><a class="px-space-md py-1.5 rounded text-on-surface-variant hover:text-on-surface transition-colors font-body-sm text-body-sm" data-path="constellation" href="#">Constellation</a><a class="px-space-md py-1.5 rounded text-on-surface-variant hover:text-on-surface transition-colors font-body-sm text-body-sm" data-path="projects" href="#">Projects</a><a class="px-space-md py-1.5 rounded text-on-surface-variant hover:text-on-surface transition-colors font-body-sm text-body-sm" data-path="creative-archive" href="#">Creative Archive</a><a class="px-space-md py-1.5 rounded text-on-surface-variant hover:text-on-surface transition-colors font-body-sm text-body-sm" data-path="contact" href="#">Contact</a></nav><div class="flex items-center gap-space-md shrink-0"><div class="hidden sm:flex flex-col text-right font-label-caps text-label-caps"><span class="text-tertiary-fixed-dim text-[11px]">AWS BUILDER '26</span><span class="text-outline text-[10px]">SYNCED // UTC-0</span></div><a class="hidden md:inline-flex items-center gap-space-xs px-space-md py-1.5 rounded bg-primary-container text-on-primary-container font-label-caps text-label-caps hover:bg-primary transition-all border border-primary-fixed/20 shadow-[0_0_16px_rgba(160,120,255,0.25)]" data-path="decision-lab" href="#"><span class="material-symbols-outlined text-[16px]">terminal</span><span>LAUNCH LAB</span></a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-16 flex-1 bg-surface"><div class="flex flex-col w-full relative overflow-hidden">
+<!-- Dynamic Ambient Glow Stratum -->
+<div class="absolute -top-40 -left-20 w-[600px] h-[600px] rounded-full bg-primary/10 blur-[140px] pointer-events-none"></div>
+<div class="absolute top-1/3 -right-28 w-[720px] h-[720px] rounded-full bg-secondary/10 blur-[160px] pointer-events-none"></div>
+<div class="absolute bottom-10 left-1/4 w-[500px] h-[500px] rounded-full bg-tertiary-container/15 blur-[120px] pointer-events-none"></div>
+<!-- Hero Stage -->
+<section class="relative w-full max-w-[1440px] mx-auto px-margin-mobile lg:px-margin pt-space-xl pb-space-3xl flex flex-col gap-space-2xl">
+<!-- Top Telemetry Protocol & Registration Strip -->
+<div class="flex flex-col md:flex-row items-start md:items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-sm px-space-md py-1.5 rounded-full bg-surface-container-high shadow-sm">
+<span class="relative flex h-2 w-2">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-secondary opacity-75"></span>
+<span class="relative inline-flex rounded-full h-2 w-2 bg-secondary"></span>
+</span>
+<span class="font-label-caps text-label-caps tracking-widest text-secondary uppercase">
+          AWS STUDENT BUILDER CHALLENGE 2026 // CANDIDATE DOSSIER
+        </span>
+</div>
+<div class="flex items-center gap-space-md font-mono-code text-mono-code text-on-surface-variant">
+<span class="text-tertiary-fixed-dim">PROTOCOL // ANK-2026-NX</span>
+<span class="text-outline-variant font-bold">/</span>
+<span>LAT: 37.7749° N</span>
+<span class="text-outline-variant font-bold">/</span>
+<span>LON: 122.4194° W</span>
+</div>
+</div>
+<!-- Master Statement Bento Grid -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-center">
+<!-- Left Column: Typographic Monument & Manifesto -->
+<div class="lg:col-span-7 flex flex-col gap-space-lg">
+<div class="flex flex-col">
+<div class="flex items-center gap-space-sm font-label-caps text-label-caps text-tertiary tracking-widest uppercase mb-space-xs">
+<span class="material-symbols-outlined text-[15px]">neurology</span>
+<span>COGNITIVE OPERATING MATRIX</span>
+</div>
+<h1 class="font-display-xl text-display-xl tracking-tight text-on-surface uppercase select-none">
+            NEXUS
+          </h1>
+<p class="font-display-lg text-display-lg text-primary italic -mt-4">
+            The Architecture of a Mind.
+          </p>
+</div>
+<div class="p-space-md rounded-xl bg-surface-container-low shadow-md flex items-center justify-between gap-space-md">
+<div class="flex flex-col">
+<span class="font-label-caps text-label-caps text-outline uppercase tracking-wider">PRIMARY ARCHITECT</span>
+<span class="font-headline-sm text-headline-sm text-on-surface font-semibold">ANKIT SINGHA</span>
+</div>
+<div class="h-8 w-px bg-surface-variant"></div>
+<div class="flex flex-col">
+<span class="font-label-caps text-label-caps text-outline uppercase tracking-wider">SPECIALIZATION</span>
+<span class="font-label-caps text-label-caps text-secondary-fixed-dim font-medium">AI &amp; SYSTEMS ARCHITECTURE</span>
+</div>
+<div class="hidden sm:flex items-center justify-center w-10 h-10 rounded-full bg-surface-container-high text-primary">
+<span class="material-symbols-outlined text-[20px]">hub</span>
+</div>
+</div>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl leading-relaxed">
+          “I build intelligent systems, explore complex problems, and find connections between logic and imagination.”
+        </p>
+<!-- Command Execution Triggers -->
+<div class="flex flex-wrap items-center gap-space-md pt-space-xs">
+<a class="group relative px-space-xl py-3 rounded-lg bg-primary-container text-on-primary-container font-headline-sm text-body-md font-semibold shadow-lg hover:shadow-primary/40 transition-all flex items-center gap-space-sm" data-path="constellation" href="#">
+<span class="material-symbols-outlined text-[20px] transition-transform group-hover:rotate-45">radar</span>
+<span>EXPLORE MY UNIVERSE</span>
+<span class="font-label-caps text-[10px] text-on-primary-container/80 tracking-widest pl-space-xs">
+              [37.7749° N, 122.4194° W]
+            </span>
+</a>
+<a class="px-space-lg py-3 rounded-lg bg-surface-container-high hover:bg-surface-bright text-secondary font-headline-sm text-body-md transition-all flex items-center gap-space-xs shadow-sm hover:shadow-secondary/20" data-path="decision-lab" href="#">
+<span class="material-symbols-outlined text-[20px]">terminal</span>
+<span>ENTER THE DECISION LAB</span>
+</a>
+</div>
+<!-- Curated Discovery Insight Beacon -->
+<div class="p-space-md rounded-xl bg-surface-container-lowest shadow-md flex items-start gap-space-md relative overflow-hidden">
+<div class="absolute left-0 top-0 bottom-0 w-1 bg-secondary"></div>
+<span class="material-symbols-outlined text-secondary text-[24px] shrink-0 mt-0.5 animate-pulse">lightbulb</span>
+<div class="flex flex-col gap-1">
+<div class="flex items-center gap-space-xs font-label-caps text-label-caps text-secondary uppercase">
+<span>DISCOVERY BEACON</span>
+<span class="w-1 h-1 rounded-full bg-secondary"></span>
+<span class="text-outline">STAGE // REFLEXIVE SYNTHESIS</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Curiosity is encouraged. Enter the Decision Lab and challenge your thinking through interactive systems logic, failure injections, and algorithmic trade-offs.
+            </p>
+</div>
+</div>
+</div>
+<!-- Right Column: Interactive Neural Logic Constellation Graphic -->
+<div class="lg:col-span-5 relative flex items-center justify-center">
+<div class="w-full relative aspect-square max-w-[520px] rounded-2xl bg-surface-container-low p-space-md shadow-2xl flex flex-col justify-between">
+<!-- Diagram Chrome -->
+<div class="flex items-center justify-between pb-space-sm">
+<div class="flex items-center gap-space-xs">
+<span class="w-2.5 h-2.5 rounded-full bg-error"></span>
+<span class="w-2.5 h-2.5 rounded-full bg-secondary"></span>
+<span class="w-2.5 h-2.5 rounded-full bg-primary"></span>
+<span class="font-label-caps text-label-caps text-on-surface-variant ml-2">GRAPH // SYS_NEURAL_TOPOLOGY</span>
+</div>
+<div class="font-label-caps text-label-caps text-tertiary">
+              LATENCY: 4.2ms
+            </div>
+</div>
+<!-- SVG Visual Logic Engine -->
+<div class="relative w-full flex-1 flex items-center justify-center my-space-xs">
+<svg class="w-full h-full text-on-surface" fill="none" viewbox="0 0 460 420" xmlns="http://www.w3.org/2000/svg">
+<defs>
+<lineargradient gradientunits="userSpaceOnUse" id="vectorGrad1" x1="60" x2="230" y1="70" y2="210">
+<stop stop-color="#4cd7f6" stop-opacity="0.8"></stop>
+<stop offset="1" stop-color="#d0bcff" stop-opacity="0.8"></stop>
+</lineargradient>
+<lineargradient gradientunits="userSpaceOnUse" id="vectorGrad2" x1="230" x2="400" y1="210" y2="120">
+<stop stop-color="#d0bcff" stop-opacity="0.8"></stop>
+<stop offset="1" stop-color="#009bd1" stop-opacity="0.8"></stop>
+</lineargradient>
+<lineargradient gradientunits="userSpaceOnUse" id="vectorGrad3" x1="230" x2="350" y1="210" y2="340">
+<stop stop-color="#d0bcff" stop-opacity="0.8"></stop>
+<stop offset="1" stop-color="#acedff" stop-opacity="0.8"></stop>
+</lineargradient>
+<lineargradient gradientunits="userSpaceOnUse" id="vectorGrad4" x1="100" x2="230" y1="330" y2="210">
+<stop stop-color="#4cd7f6" stop-opacity="0.8"></stop>
+<stop offset="1" stop-color="#d0bcff" stop-opacity="0.8"></stop>
+</lineargradient>
+<filter height="200%" id="nodeGlow" width="200%" x="-50%" y="-50%">
+<fegaussianblur result="blur" stddeviation="6"></fegaussianblur>
+<femerge>
+<femergenode in="blur"></femergenode>
+<femergenode in="SourceGraphic"></femergenode>
+</femerge>
+</filter>
+</defs>
+<!-- Dynamic Vector Mesh -->
+<path d="M 60 70 L 230 210" opacity="0.65" stroke="url(#vectorGrad1)" stroke-dasharray="4 3" stroke-width="1.5"></path>
+<path d="M 230 210 L 400 120" opacity="0.7" stroke="url(#vectorGrad2)" stroke-width="1.5"></path>
+<path d="M 230 210 L 350 340" opacity="0.65" stroke="url(#vectorGrad3)" stroke-dasharray="5 2" stroke-width="1.5"></path>
+<path d="M 100 330 L 230 210" opacity="0.75" stroke="url(#vectorGrad4)" stroke-width="1.5"></path>
+<path d="M 60 70 L 100 330" stroke="#4cd7f6" stroke-opacity="0.25" stroke-width="1"></path>
+<path d="M 400 120 L 350 340" stroke="#7bd0ff" stroke-opacity="0.25" stroke-width="1"></path>
+<!-- Orbiting Signal Waves -->
+<circle cx="230" cy="210" opacity="0.35" r="75" stroke="#958ea0" stroke-dasharray="6 6" stroke-width="0.75"></circle>
+<circle cx="230" cy="210" opacity="0.25" r="130" stroke="#958ea0" stroke-dasharray="4 8" stroke-width="0.5"></circle>
+<!-- Peripheral Cluster Nodes -->
+<!-- Cluster A: AWS Engine -->
+<g transform="translate(60, 70)">
+<circle cx="0" cy="0" fill="#191b24" r="22"></circle>
+<circle cx="0" cy="0" fill="#00354a" r="16"></circle>
+<circle cx="0" cy="0" fill="#4cd7f6" filter="url(#nodeGlow)" r="6"></circle>
+<text fill="#acedff" font-family="JetBrains Mono" font-size="9" font-weight="600" text-anchor="middle" x="0" y="36">AWS_RUNTIME</text>
+<text fill="#958ea0" font-family="JetBrains Mono" font-size="8" text-anchor="middle" x="0" y="46">Q-CLUSTER // 01</text>
+</g>
+<!-- Cluster B: Cognitive Logic Gate -->
+<g transform="translate(400, 120)">
+<circle cx="0" cy="0" fill="#191b24" r="20"></circle>
+<circle cx="0" cy="0" fill="#340080" r="14"></circle>
+<circle cx="0" cy="0" fill="#d0bcff" filter="url(#nodeGlow)" r="5"></circle>
+<text fill="#d0bcff" font-family="JetBrains Mono" font-size="9" font-weight="600" text-anchor="middle" x="0" y="32">LOGIC_GATE</text>
+<text fill="#958ea0" font-family="JetBrains Mono" font-size="8" text-anchor="middle" x="0" y="42">BOOLEAN_BAYES</text>
+</g>
+<!-- Cluster C: Vector Cache -->
+<g transform="translate(100, 330)">
+<circle cx="0" cy="0" fill="#191b24" r="20"></circle>
+<circle cx="0" cy="0" fill="#003640" r="14"></circle>
+<circle cx="0" cy="0" fill="#03b5d3" r="5"></circle>
+<text fill="#acedff" font-family="JetBrains Mono" font-size="9" font-weight="600" text-anchor="middle" x="0" y="32">VECTOR_STORE</text>
+<text fill="#958ea0" font-family="JetBrains Mono" font-size="8" text-anchor="middle" x="0" y="42">EMBEDDING_1536</text>
+</g>
+<!-- Cluster D: Philosophical Axiom Node -->
+<g transform="translate(350, 340)">
+<circle cx="0" cy="0" fill="#191b24" r="20"></circle>
+<circle cx="0" cy="0" fill="#5516be" r="14"></circle>
+<circle cx="0" cy="0" fill="#e9ddff" r="5"></circle>
+<text fill="#e9ddff" font-family="JetBrains Mono" font-size="9" font-weight="600" text-anchor="middle" x="0" y="32">INTELLECTION</text>
+<text fill="#958ea0" font-family="JetBrains Mono" font-size="8" text-anchor="middle" x="0" y="42">SYNTH_AXIOMS</text>
+</g>
+<!-- Core Nexus Epicenter -->
+<g transform="translate(230, 210)">
+<circle cx="0" cy="0" fill="#11131b" r="38"></circle>
+<circle cx="0" cy="0" fill="#282a33" r="28"></circle>
+<circle cx="0" cy="0" fill="#a078ff" filter="url(#nodeGlow)" r="14"></circle>
+<circle cx="0" cy="0" fill="#ffffff" r="5"></circle>
+<text fill="#e1e1ee" font-family="Space Grotesk" font-size="11" font-weight="700" text-anchor="middle" x="0" y="-44">NEXUS CORE</text>
+<text fill="#4cd7f6" font-family="JetBrains Mono" font-size="8" text-anchor="middle" x="0" y="48">SYNC RATE: 99.98%</text>
+</g>
+<!-- Dynamic Data Stream Indicators -->
+<rect fill="#1d1f28" height="14" rx="3" width="34" x="135" y="130"></rect>
+<text fill="#4cd7f6" font-family="JetBrains Mono" font-size="8" text-anchor="middle" x="152" y="140">Δ 1.2ms</text>
+<rect fill="#1d1f28" height="14" rx="3" width="34" x="295" y="155"></rect>
+<text fill="#d0bcff" font-family="JetBrains Mono" font-size="8" text-anchor="middle" x="312" y="165">Δ 2.8ms</text>
+<rect fill="#1d1f28" height="14" rx="3" width="38" x="270" y="270"></rect>
+<text fill="#acedff" font-family="JetBrains Mono" font-size="8" text-anchor="middle" x="289" y="280">LOGIC_OK</text>
+</svg>
+</div>
+<!-- Bottom Console Telemetry Status -->
+<div class="p-space-sm rounded-lg bg-surface-container flex items-center justify-between font-label-caps text-label-caps text-on-surface-variant">
+<span class="flex items-center gap-1.5 text-secondary">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary animate-pulse"></span>
+              NEURAL INFERENCE ACTIVE
+            </span>
+<span class="text-outline">P-99 // 28.4 GFLOPS</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Architectural Telemetry HUD Matrix -->
+<div class="w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-gutter pt-space-md">
+<!-- Metric 1 -->
+<div class="p-space-lg rounded-xl bg-surface-container-low shadow-sm flex flex-col gap-space-xs transition-transform hover:-translate-y-0.5">
+<div class="flex items-center justify-between text-outline font-label-caps text-label-caps">
+<span class="uppercase tracking-wider">RESILIENCE METRIC</span>
+<span class="material-symbols-outlined text-[18px] text-secondary">shield_with_heart</span>
+</div>
+<div class="flex items-baseline gap-space-xs">
+<span class="font-mono-metric text-mono-metric font-semibold text-on-surface">99.98</span>
+<span class="font-label-caps text-label-caps text-secondary">%</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Cognitive architecture uptime &amp; error self-recovery</span>
+<div class="w-full bg-surface-variant h-1 rounded-full overflow-hidden mt-space-xs">
+<div class="bg-secondary h-full rounded-full" style="width: 99.98%;"></div>
+</div>
+</div>
+<!-- Metric 2 -->
+<div class="p-space-lg rounded-xl bg-surface-container-low shadow-sm flex flex-col gap-space-xs transition-transform hover:-translate-y-0.5">
+<div class="flex items-center justify-between text-outline font-label-caps text-label-caps">
+<span class="uppercase tracking-wider">COMPUTE NODES</span>
+<span class="material-symbols-outlined text-[18px] text-primary">alt_route</span>
+</div>
+<div class="flex items-baseline gap-space-xs">
+<span class="font-mono-metric text-mono-metric font-semibold text-on-surface">42</span>
+<span class="font-label-caps text-label-caps text-primary">CLUSTERS</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">AI agents, vector databases &amp; serverless functions</span>
+<div class="w-full bg-surface-variant h-1 rounded-full overflow-hidden mt-space-xs">
+<div class="bg-primary h-full rounded-full" style="width: 82%;"></div>
+</div>
+</div>
+<!-- Metric 3 -->
+<div class="p-space-lg rounded-xl bg-surface-container-low shadow-sm flex flex-col gap-space-xs transition-transform hover:-translate-y-0.5">
+<div class="flex items-center justify-between text-outline font-label-caps text-label-caps">
+<span class="uppercase tracking-wider">CREATIVE POLARITY</span>
+<span class="material-symbols-outlined text-[18px] text-tertiary">balance</span>
+</div>
+<div class="flex items-baseline gap-space-xs">
+<span class="font-mono-metric text-mono-metric font-semibold text-on-surface">LOGIC</span>
+<span class="font-label-caps text-label-caps text-outline-variant font-bold">&amp;</span>
+<span class="font-mono-metric text-mono-metric font-semibold text-tertiary-fixed-dim">POETICS</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Synthesis between strict algorithms &amp; philosophical nuance</span>
+<div class="w-full bg-surface-variant h-1 rounded-full overflow-hidden mt-space-xs">
+<div class="bg-tertiary h-full rounded-full" style="width: 100%;"></div>
+</div>
+</div>
+<!-- Metric 4 -->
+<div class="p-space-lg rounded-xl bg-surface-container-low shadow-sm flex flex-col gap-space-xs transition-transform hover:-translate-y-0.5">
+<div class="flex items-center justify-between text-outline font-label-caps text-label-caps">
+<span class="uppercase tracking-wider">TELEMETRY STATUS</span>
+<span class="material-symbols-outlined text-[18px] text-secondary">check_circle</span>
+</div>
+<div class="flex items-baseline gap-space-xs">
+<span class="font-mono-metric text-mono-metric font-semibold text-secondary">NOMINAL</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">AWS global control plane healthy across all target AZs</span>
+<div class="w-full bg-surface-variant h-1 rounded-full overflow-hidden mt-space-xs">
+<div class="bg-secondary-container h-full rounded-full" style="width: 95%;"></div>
+</div>
+</div>
+</div>
+<!-- Dimensional Navigation Signal / Scroll Anchor -->
+<div class="flex flex-col items-center justify-center gap-space-xs pt-space-lg pb-space-sm text-on-surface-variant">
+<span class="font-label-caps text-label-caps text-outline uppercase tracking-widest text-[11px]">
+        TRAVERSE COGNITIVE DIMENSIONS
+      </span>
+<div class="w-6 h-10 rounded-full bg-surface-container-high flex items-start justify-center p-1 shadow-inner">
+<div class="w-1.5 h-3 rounded-full bg-primary animate-bounce"></div>
+</div>
+<span class="material-symbols-outlined text-[18px] text-outline">expand_more</span>
+</div>
+</section>
+<!-- Interactive Terminal Micro-Controller Script -->
+<script>
+    (function () {
+      const coreNode = document.querySelector('circle[fill="#a078ff"]');
+      if (coreNode) {
+        coreNode.style.cursor = 'pointer';
+        coreNode.addEventListener('mouseenter', () => {
+          coreNode.setAttribute('r', '18');
+        });
+        coreNode.addEventListener('mouseleave', () => {
+          coreNode.setAttribute('r', '14');
+        });
+      }
+    })();
+  </script>
+</div></main><footer class="w-full bg-surface-container-lowest border-t border-outline-variant/40 mt-auto"><div class="max-w-[1440px] mx-auto px-gutter-sm lg:px-margin py-space-xl flex flex-col gap-space-lg"><div class="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-space-md"><div class="flex flex-col"><div class="flex items-center gap-space-sm"><span class="font-headline-sm text-headline-sm font-semibold tracking-wide text-on-surface">ANKIT SINGHA</span><span class="font-label-caps text-label-caps text-secondary px-space-xs py-0.5 rounded bg-surface-container-high border border-outline-variant/60">AI &amp; SYSTEMS ARCHITECT</span></div><span class="font-body-sm text-body-sm text-on-surface-variant mt-1">NEXUS: The Architecture of a Mind — Engineered for AWS Student Builder Challenge 2026.</span></div><div class="flex flex-wrap items-center gap-space-sm font-label-caps text-label-caps text-on-surface-variant"><div class="flex items-center gap-1.5 px-space-sm py-1 rounded bg-surface-container-high border border-outline-variant/50 text-tertiary"><span class="material-symbols-outlined text-[14px]">speed</span><span>LATENCY: 12ms</span></div><div class="flex items-center gap-1.5 px-space-sm py-1 rounded bg-surface-container-high border border-outline-variant/50 text-secondary"><span class="material-symbols-outlined text-[14px]">grid_view</span><span>LOC // 37.7749° N, 122.4194° W</span></div><div class="flex items-center gap-1.5 px-space-sm py-1 rounded bg-surface-container-high border border-outline-variant/50 text-on-surface"><span class="material-symbols-outlined text-[14px]">cloud_done</span><span>AWS SBC-2026</span></div></div></div><div class="h-px w-full bg-outline-variant/20"></div><div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-md font-label-caps text-label-caps text-on-surface-variant"><div class="flex items-center gap-space-lg"><a class="hover:text-primary transition-colors flex items-center gap-1" href="https://github.com" rel="noreferrer" target="_blank"><span>GITHUB</span></a><a class="hover:text-primary transition-colors flex items-center gap-1" href="https://linkedin.com" rel="noreferrer" target="_blank"><span>LINKEDIN</span></a><a class="hover:text-primary transition-colors flex items-center gap-1" href="mailto:ankit@nexus.dev"><span>EMAIL</span></a><a class="hover:text-primary transition-colors flex items-center gap-1" data-path="overview" href="#"><span>SYS_MANIFEST</span></a></div><div class="text-[11px] text-outline">© 2026 ANKIT SINGHA • KERNEL RESTRICTED • ALL RIGHTS RESERVED</div></div></div></footer></body></html>
