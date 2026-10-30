@@ -92,29 +92,29 @@ export const ConstellationSection: React.FC = () => {
 };
 
 export const ProjectsSection: React.FC = () => {
-  const sampleProjects = [
+  const verifiedProjects = [
     {
-      title: 'Distributed Inference Circuit Breaker',
-      tag: 'AWS RESILIENCE',
-      badge: 'PROD_EAST_01',
-      desc: 'Self-healing backpressure cluster routing high-surge generative AI workloads into asynchronous SQS buffers with zero request drops.',
-      tech: ['Amazon SQS', 'ECS Fargate', 'Bedrock Claude', 'DynamoDB'],
+      title: 'HeatShield AI',
+      tag: 'EDGE & ANOMALY DETECTION',
+      badge: 'PRODUCTION RUNTIME',
+      desc: 'Real-time thermal anomaly detection system utilizing intelligent backpressure and event-driven buffers to absorb high-frequency IoT climate sensor bursts.',
+      tech: ['Amazon SQS', 'ECS Fargate', 'Bedrock Claude', 'FastAPI'],
       status: 'VERIFIED'
     },
     {
-      title: 'Cognitive Vector Topology Engine',
-      tag: 'SYSTEMS EMBEDDING',
-      badge: 'LATENCY: 4.2ms',
-      desc: 'High-dimensional semantic graph connecting multi-modal intelligence vectors with sub-10ms similarity queries.',
-      tech: ['Vector Store 1536', 'Python', 'FastAPI', 'AWS Lambda'],
+      title: 'CareerPilot AI',
+      tag: 'HYBRID SEMANTIC SEARCH',
+      badge: 'POLYGLOT PERSISTENCE',
+      desc: 'Intelligent career path navigation combining canonical relational ACID profiles in PostgreSQL with sub-40ms vector similarity matching for candidate skill graphs.',
+      tech: ['Aurora PostgreSQL', 'OpenSearch Serverless', 'EventBridge', 'React'],
       status: 'ACTIVE'
     },
     {
-      title: 'NEXUS Telemetry Console',
-      tag: 'INTERACTIVE ARCHITECTURE',
-      badge: 'AWS SBC 2026',
-      desc: 'Real-time telemetry HUD displaying live cluster entropy, fault resilience, and algorithmic decision modeling.',
-      tech: ['React 19', 'TypeScript', 'Tailwind CSS', 'Vite'],
+      title: 'DETOURA',
+      tag: 'RESILIENT ROUTING',
+      badge: 'MULTI-AZ RESILIENCE',
+      desc: 'Fault-tolerant travel discovery platform designed with Multi-AZ redundancy and CloudFront edge caching to preserve navigation guidance during transient network partition events.',
+      tech: ['Amazon CloudFront', 'Multi-AZ ALB', 'DynamoDB', 'TypeScript'],
       status: 'SHIPPED'
     }
   ];
@@ -133,7 +133,7 @@ export const ProjectsSection: React.FC = () => {
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter">
-        {sampleProjects.map((p, i) => (
+        {verifiedProjects.map((p, i) => (
           <div key={i} className="bg-surface-container-low p-space-lg rounded-xl border border-outline-variant/30 flex flex-col justify-between gap-space-md hover:-translate-y-1 transition-all">
             <div className="flex flex-col gap-space-xs">
               <div className="flex items-center justify-between text-outline font-label-caps text-label-caps">
@@ -251,3 +251,4 @@ export const ContactSection: React.FC = () => {
     </section>
   );
 };
+

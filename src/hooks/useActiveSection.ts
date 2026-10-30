@@ -28,3 +28,4 @@ export function useActiveSection(sectionIds: string[], offset: number = 100) {
 
   return activeSection;
 }
+

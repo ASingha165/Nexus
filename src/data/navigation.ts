@@ -22,7 +22,8 @@ export const SYSTEM_META = {
   location: {
     lat: '37.7749° N',
     lon: '122.4194° W',
-    display: 'LOC // 37.7749° N, 122.4194° W',
+    datum: 'CALIBRATION DATUM',
+    display: 'REF // 37.7749° N, 122.4194° W',
   },
   challenge: "AWS STUDENT BUILDER CHALLENGE 2026 // CANDIDATE DOSSIER",
   architect: {
@@ -31,8 +32,8 @@ export const SYSTEM_META = {
     manifesto: 'I build intelligent systems, explore complex problems, and find connections between logic and imagination.',
   },
   telemetry: {
-    nominalText: 'TELEMETRY: NOMINAL',
-    syncText: "AWS BUILDER '26 • SYNCED // UTC-0",
+    nominalText: 'CLIENT TELEMETRY: NOMINAL',
+    syncText: "AWS BUILDER '26 • STATIC EDGE SPA",
   },
   socials: [
     { label: 'GITHUB', url: 'https://github.com/ASingha165' },
@@ -41,4 +42,3 @@ export const SYSTEM_META = {
     { label: 'SYS_MANIFEST', url: '#manifest' },
   ],
 };
-

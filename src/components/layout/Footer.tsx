@@ -96,3 +96,4 @@ export const Footer: React.FC<FooterProps> = ({ onNavigateToSection }) => {
     </footer>
   );
 };
+

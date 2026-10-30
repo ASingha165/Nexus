@@ -109,7 +109,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onNavigateToSection })
               </span>
               <span>EXPLORE MY UNIVERSE</span>
               <span className="font-label-caps text-[10px] text-on-primary-container/80 tracking-widest pl-space-xs">
-                [{SYSTEM_META.location.lat}, {SYSTEM_META.location.lon}]
+                [{SYSTEM_META.location.datum}]
               </span>
             </a>
 
@@ -180,3 +180,4 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onNavigateToSection })
     </section>
   );
 };
+

@@ -193,3 +193,4 @@ export const NavBar: React.FC<NavBarProps> = ({ onNavigateToSection, activeSecti
     </header>
   );
 };
+
