@@ -37,8 +37,7 @@ export const SYSTEM_META = {
   },
   socials: [
     { label: 'GITHUB', url: 'https://github.com/ASingha165' },
-    { label: 'LINKEDIN', url: 'https://linkedin.com' },
-    { label: 'EMAIL', url: 'mailto:ankit@nexus.dev' },
-    { label: 'SYS_MANIFEST', url: '#manifest' },
+    { label: 'EMAIL', url: 'mailto:singhaankit165@gmail.com' },
+    { label: 'NEXUS REPO', url: 'https://github.com/ASingha165/Nexus' },
   ],
 };

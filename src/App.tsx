@@ -4,14 +4,12 @@ import { NavBar } from './components/layout/NavBar';
 import { Footer } from './components/layout/Footer';
 import { AmbientGlow } from './components/layout/AmbientGlow';
 import { HeroSection } from './components/landing/HeroSection';
+import { TelemetryDossierSection as AboutSection } from './sections/dossier/TelemetryDossierSection';
 import { DecisionLabSection } from './sections/decision-lab/DecisionLabSection';
 import { ConstellationSection } from './sections/constellation/ConstellationSection';
 import { ProjectsSection } from './sections/projects/ProjectsSection';
 import { CreativeArchiveSection } from './sections/creative-archive/CreativeArchiveSection';
-import {
-  AboutSection,
-  ContactSection,
-} from './sections/supporting/SupportingSections';
+import { ContactTransmissionSection as ContactSection } from './sections/contact/ContactTransmissionSection';
 import { useActiveSection } from './hooks/useActiveSection';
 
 const SECTION_IDS = [
