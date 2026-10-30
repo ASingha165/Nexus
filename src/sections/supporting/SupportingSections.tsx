@@ -56,40 +56,6 @@ export const AboutSection: React.FC = () => {
   );
 };
 
-export const CreativeArchiveSection: React.FC = () => {
-  return (
-    <section id="creative-archive" className="relative w-full max-w-[1440px] mx-auto px-margin-mobile lg:px-margin py-space-2xl border-t border-outline-variant/30 flex flex-col gap-space-xl">
-      <div className="flex flex-col gap-space-xs">
-        <div className="flex items-center gap-space-xs font-label-caps text-label-caps text-primary uppercase tracking-widest">
-          <span className="material-symbols-outlined text-[16px]" aria-hidden="true">auto_stories</span>
-          <span>CHRONICLE // 04 • CREATIVE ARCHIVE</span>
-        </div>
-        <h2 className="font-display-lg text-display-lg text-on-surface">Creative & Architectural Archive</h2>
-        <p className="font-body-lg text-body-lg text-on-surface-variant italic">
-          “Where rigorous systems meet human expression, philosophical essays, and computational design.”
-        </p>
-      </div>
-
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-gutter">
-        <div className="bg-surface-container-low p-space-lg rounded-xl border border-outline-variant/30 flex flex-col gap-space-sm">
-          <span className="font-label-caps text-label-caps text-tertiary">ESSAY REF // 01</span>
-          <h3 className="font-headline-sm text-headline-sm text-on-surface">The Thermodynamics of Cloud Scale</h3>
-          <p className="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
-            Exploring system entropy in massive distributed microservices, drawing parallels between statistical mechanics and asynchronous worker pools.
-          </p>
-        </div>
-        <div className="bg-surface-container-low p-space-lg rounded-xl border border-outline-variant/30 flex flex-col gap-space-sm">
-          <span className="font-label-caps text-label-caps text-secondary">DESIGN EXPERIMENT // 02</span>
-          <h3 className="font-headline-sm text-headline-sm text-on-surface">Obsidian Telemetry: Dark Canvas Aesthetics</h3>
-          <p className="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
-            A deep-dive into instrument-grade user interface design, micro-contrast thresholds, and scientific typography hierarchies for high-focus developers.
-          </p>
-        </div>
-      </div>
-    </section>
-  );
-};
-
 export const ContactSection: React.FC = () => {
   const [formSent, setFormSent] = React.useState(false);
 

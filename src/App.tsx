@@ -7,9 +7,9 @@ import { HeroSection } from './components/landing/HeroSection';
 import { DecisionLabSection } from './sections/decision-lab/DecisionLabSection';
 import { ConstellationSection } from './sections/constellation/ConstellationSection';
 import { ProjectsSection } from './sections/projects/ProjectsSection';
+import { CreativeArchiveSection } from './sections/creative-archive/CreativeArchiveSection';
 import {
   AboutSection,
-  CreativeArchiveSection,
   ContactSection,
 } from './sections/supporting/SupportingSections';
 import { useActiveSection } from './hooks/useActiveSection';
