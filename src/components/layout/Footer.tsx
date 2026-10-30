@@ -42,9 +42,9 @@ export const Footer: React.FC<FooterProps> = ({ onNavigateToSection }) => {
           <div className="flex flex-wrap items-center gap-3 font-mono-code text-xs text-on-surface-variant">
             <div className="flex items-center gap-1.5 px-3 py-1 rounded-lg bg-surface-container-high border border-outline-variant/50 text-tertiary">
               <span className="material-symbols-outlined text-[14px]" aria-hidden="true">
-                speed
+                verified
               </span>
-              <span>EDGE CLIENT: NOMINAL</span>
+              <span>PORTFOLIO // ONLINE</span>
             </div>
             <div className="flex items-center gap-1.5 px-3 py-1 rounded-lg bg-surface-container-high border border-outline-variant/50 text-secondary">
               <span className="material-symbols-outlined text-[14px]" aria-hidden="true">
@@ -111,7 +111,7 @@ export const Footer: React.FC<FooterProps> = ({ onNavigateToSection }) => {
 
           <div className="flex items-center gap-4">
             <div className="text-[11px] text-outline">
-              © {currentYear} {SYSTEM_META.architect.name} • KERNEL RESTRICTED
+              © {currentYear} {SYSTEM_META.architect.name} • ALL RIGHTS RESERVED
             </div>
 
             <button

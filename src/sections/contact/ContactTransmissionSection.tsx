@@ -49,7 +49,7 @@ export const ContactTransmissionSection: React.FC = () => {
         <div className="flex flex-col gap-3 max-w-2xl">
           <div className="flex items-center gap-3">
             <span className="font-mono-code text-xs uppercase tracking-widest text-primary font-semibold">
-              06 // TRANSMISSION TERMINAL
+              06 // CONTACT TRANSMISSION
             </span>
             <span className="w-8 h-[1px] bg-primary/40" />
             <span className="font-mono-code text-[11px] text-secondary">
@@ -76,11 +76,11 @@ export const ContactTransmissionSection: React.FC = () => {
           <div className="flex items-center gap-2">
             <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
             <span className="font-mono-code text-xs text-on-surface font-semibold">
-              TERMINAL READY // CLIENT MAIL DISPATCH
+              CONTACT CHANNELS // ONLINE
             </span>
           </div>
           <span className="font-mono-code text-[11px] text-outline">
-            ZERO SIMULATED SUBMISSIONS // GENUINE EMAIL ROUTING
+            WEST BENGAL, INDIA // DIRECT INBOX
           </span>
         </div>
       </div>

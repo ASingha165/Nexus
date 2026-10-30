@@ -69,16 +69,16 @@ export const ProjectsSection: React.FC = () => {
           </p>
         </div>
 
-        {/* Telemetry Status Box */}
+        {/* Portfolio Status Box */}
         <div className="flex flex-col sm:items-end gap-1.5 p-3 rounded-xl bg-surface-container-low/60 border border-outline-variant/30 backdrop-blur-md">
           <div className="flex items-center gap-2">
             <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
             <span className="font-mono-code text-xs text-on-surface font-semibold">
-              TELEMETRY: ALL 4 REPOSITORIES ACTIVE
+              VERIFIED CODEBASES // 4 PROJECTS ONLINE
             </span>
           </div>
           <span className="font-mono-code text-[11px] text-outline">
-            ZERO HALLUCINATED METRICS // ZERO SYNTHETIC CODEBASES
+            OPEN SOURCE ON GITHUB // ANKIT SINGHA
           </span>
         </div>
       </div>

@@ -12,11 +12,11 @@ export const NeuralConstellationPreview: React.FC = () => {
           <span className="w-2.5 h-2.5 rounded-full bg-secondary" />
           <span className="w-2.5 h-2.5 rounded-full bg-primary" />
           <span className="font-label-caps text-label-caps text-on-surface-variant ml-2">
-            GRAPH // SYS_NEURAL_TOPOLOGY
+            TECHNICAL ECOSYSTEM // KNOWLEDGE GRAPH
           </span>
         </div>
         <div className="font-label-caps text-label-caps text-tertiary">
-          LATENCY: 4.2ms
+          28 VERIFIED NODES
         </div>
       </div>
 
@@ -209,22 +209,22 @@ export const NeuralConstellationPreview: React.FC = () => {
               NEXUS CORE
             </text>
             <text fill="#4cd7f6" fontFamily="JetBrains Mono" fontSize="8" textAnchor="middle" x="0" y="48">
-              SYNC RATE: 99.98%
+              INTERCONNECTED GRAPH
             </text>
           </g>
 
-          {/* Dynamic Data Stream Indicators */}
-          <rect fill="#1d1f28" height="14" rx="3" width="34" x="135" y="130" />
+          {/* Dynamic Category Badges */}
+          <rect fill="#1d1f28" height="14" rx="3" width="54" x="125" y="130" />
           <text fill="#4cd7f6" fontFamily="JetBrains Mono" fontSize="8" textAnchor="middle" x="152" y="140">
-            Δ 1.2ms
+            AI / AGENTS
           </text>
-          <rect fill="#1d1f28" height="14" rx="3" width="34" x="295" y="155" />
+          <rect fill="#1d1f28" height="14" rx="3" width="46" x="289" y="155" />
           <text fill="#d0bcff" fontFamily="JetBrains Mono" fontSize="8" textAnchor="middle" x="312" y="165">
-            Δ 2.8ms
+            CLOUD
           </text>
-          <rect fill="#1d1f28" height="14" rx="3" width="38" x="270" y="270" />
+          <rect fill="#1d1f28" height="14" rx="3" width="54" x="262" y="270" />
           <text fill="#acedff" fontFamily="JetBrains Mono" fontSize="8" textAnchor="middle" x="289" y="280">
-            LOGIC_OK
+            FULL-STACK
           </text>
         </svg>
       </div>
@@ -233,9 +233,9 @@ export const NeuralConstellationPreview: React.FC = () => {
       <div className="p-space-sm rounded-lg bg-surface-container flex items-center justify-between font-label-caps text-label-caps text-on-surface-variant border border-outline-variant/30">
         <span className="flex items-center gap-1.5 text-secondary">
           <span className="w-1.5 h-1.5 rounded-full bg-secondary animate-pulse" />
-          NEURAL INFERENCE ACTIVE
+          INTERACTIVE KNOWLEDGE NETWORK
         </span>
-        <span className="text-outline">P-99 // 28.4 GFLOPS</span>
+        <span className="text-outline">WEST BENGAL, INDIA</span>
       </div>
     </div>
   );

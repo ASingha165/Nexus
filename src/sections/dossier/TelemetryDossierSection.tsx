@@ -55,11 +55,11 @@ export const TelemetryDossierSection: React.FC = () => {
           <div className="flex items-center gap-2">
             <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
             <span className="font-mono-code text-xs text-on-surface font-semibold">
-              AUTHENTICITY AUDIT: 100% VERIFIED
+              ACADEMIC FOUNDATION // BRAINWARE UNIVERSITY
             </span>
           </div>
           <span className="font-mono-code text-[11px] text-outline">
-            ZERO FICTITIOUS AWARDS // ZERO SIMULATED EXPERIENCE
+            WEST BENGAL, INDIA // B.TECH CSE (AI & ML)
           </span>
         </div>
       </div>

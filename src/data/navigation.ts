@@ -17,23 +17,23 @@ export const NAVIGATION_ITEMS: NavItemConfig[] = [
 
 export const SYSTEM_META = {
   appName: 'NEXUS',
-  version: 'SYS.ARCH v2.6',
-  protocol: 'PROTOCOL // ANK-2026-NX',
+  version: 'PORTFOLIO 2026',
+  protocol: 'AWS STUDENT BUILDER CHALLENGE 2026',
   location: {
-    lat: '37.7749° N',
-    lon: '122.4194° W',
-    datum: 'CALIBRATION DATUM',
-    display: 'REF // 37.7749° N, 122.4194° W',
+    region: 'West Bengal, India',
+    display: 'West Bengal, India',
   },
-  challenge: "AWS STUDENT BUILDER CHALLENGE 2026 // CANDIDATE DOSSIER",
+  challenge: 'AWS STUDENT BUILDER CHALLENGE 2026 // CANDIDATE PORTFOLIO',
   architect: {
     name: 'ANKIT SINGHA',
-    role: 'AI & SYSTEMS ARCHITECT',
+    role: 'AI & SYSTEMS DEVELOPER',
+    degree: 'B.Tech in Computer Science & Engineering (Artificial Intelligence & Machine Learning)',
+    institution: 'Brainware University',
     manifesto: 'I build intelligent systems, explore complex problems, and find connections between logic and imagination.',
   },
   telemetry: {
-    nominalText: 'CLIENT TELEMETRY: NOMINAL',
-    syncText: "AWS BUILDER '26 • STATIC EDGE SPA",
+    nominalText: 'PERSONAL PORTFOLIO // ONLINE',
+    syncText: "AWS BUILDER '26 • VERIFIED PORTFOLIO",
   },
   socials: [
     { label: 'GITHUB', url: 'https://github.com/ASingha165' },

@@ -47,10 +47,10 @@ export interface ProfileDossier {
 export const PROFILE_DOSSIER: ProfileDossier = {
   identity: {
     name: 'Ankit Singha',
-    role: 'AI & Systems Engineer | Computer Science & Engineering Student',
+    role: 'AI & Systems Developer | Computer Science & Engineering Student',
     tagline: 'Engineering calibrated AI decision systems, resilient cloud backends, and full-stack architectures.',
     bio: [
-      'I am an AI & Systems Engineer pursuing my B.Tech in Computer Science and Engineering with a specialization in Artificial Intelligence and Machine Learning at Brainware University.',
+      'I am an AI & Systems Developer pursuing my B.Tech in Computer Science and Engineering with a specialization in Artificial Intelligence and Machine Learning at Brainware University.',
       'My engineering work focuses on the intersection of deep learning inference and distributed systems: building calibrated confidence gates for autonomous agents (HeatShield AI), local quantized model runtimes (DETOURA with Google Gemma 2B GGUF), deterministic financial engines (Vow-Vibe-AI), and end-to-end career copilot architectures (CareerPilot AI).',
       'I approach software engineering with an experimental, test-first ethos—validating architectures against unpredictable data anomalies, zero-leak edge cases, and real-world system constraints.',
     ],
