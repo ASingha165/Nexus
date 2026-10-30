@@ -1,49 +1,68 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import { SYSTEM_META } from './data/navigation';
+import { useCallback } from 'react';
+import { BrowserRouter } from 'react-router-dom';
+import { NavBar } from './components/layout/NavBar';
+import { Footer } from './components/layout/Footer';
+import { AmbientGlow } from './components/layout/AmbientGlow';
+import { HeroSection } from './components/landing/HeroSection';
+import { DecisionLabSection } from './sections/decision-lab/DecisionLabSection';
+import {
+  AboutSection,
+  ConstellationSection,
+  ProjectsSection,
+  CreativeArchiveSection,
+  ContactSection,
+} from './sections/supporting/SupportingSections';
+import { useActiveSection } from './hooks/useActiveSection';
+
+const SECTION_IDS = [
+  'overview',
+  'about',
+  'decision-lab',
+  'constellation',
+  'projects',
+  'creative-archive',
+  'contact',
+];
 
 export default function App() {
+  const activeSection = useActiveSection(SECTION_IDS, 120);
+
+  const scrollToSection = useCallback((sectionId: string) => {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      const topOffset = 70; // Header height offset
+      const elementPosition = element.getBoundingClientRect().top;
+      const offsetPosition = elementPosition + window.pageYOffset - topOffset;
+
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: 'smooth',
+      });
+    }
+  }, []);
+
   return (
     <BrowserRouter>
-      <div className="bg-surface font-body-md text-body-md text-on-surface selection:bg-primary-container selection:text-on-primary-container min-h-screen flex flex-col">
-        {/* Top telemetry protocol indicator */}
-        <div className="hidden xl:flex items-center justify-between px-margin py-1 bg-surface-container-lowest border-b border-outline-variant/30 text-[11px] font-label-caps text-outline">
-          <div className="flex items-center gap-space-xs text-secondary">
-            <span className="w-1.5 h-1.5 rounded-full bg-secondary animate-pulse" />
-            <span>{SYSTEM_META.telemetry.nominalText}</span>
-          </div>
-          <div>{SYSTEM_META.challenge}</div>
-          <div>{SYSTEM_META.telemetry.syncText}</div>
-        </div>
+      <div className="bg-surface font-body-md text-body-md text-on-surface selection:bg-primary-container selection:text-on-primary-container min-h-screen flex flex-col relative overflow-x-hidden">
+        {/* Ambient Phosphor Glow Stratum */}
+        <AmbientGlow />
 
-        {/* Global application routes */}
-        <Routes>
-          <Route
-            path="/"
-            element={
-              <main className="w-full flex-1 flex flex-col items-center justify-center p-space-xl">
-                <div className="max-w-[720px] text-center flex flex-col items-center gap-space-md">
-                  <div className="px-space-md py-1 rounded-full bg-surface-container-high text-secondary font-label-caps text-label-caps uppercase tracking-widest">
-                    {SYSTEM_META.protocol}
-                  </div>
-                  <h1 className="font-display-xl text-display-xl tracking-tight text-on-surface uppercase select-none">
-                    {SYSTEM_META.appName}
-                  </h1>
-                  <p className="font-display-lg text-display-lg text-primary italic -mt-2">
-                    The Architecture of a Mind.
-                  </p>
-                  <p className="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
-                    “{SYSTEM_META.architect.manifesto}”
-                  </p>
-                  <div className="pt-space-md flex items-center gap-space-sm font-label-caps text-label-caps text-outline">
-                    <span>ARCHITECT: {SYSTEM_META.architect.name}</span>
-                    <span>•</span>
-                    <span className="text-secondary">{SYSTEM_META.architect.role}</span>
-                  </div>
-                </div>
-              </main>
-            }
-          />
-        </Routes>
+        {/* Global Persistent Frosted Header */}
+        <NavBar onNavigateToSection={scrollToSection} activeSection={activeSection} />
+
+        {/* Main Content Sections */}
+        <main className="w-full pt-16 flex-1 bg-surface z-10 flex flex-col">
+          <HeroSection onNavigateToSection={scrollToSection} />
+          <AboutSection />
+          <DecisionLabSection />
+          <ConstellationSection />
+          <ProjectsSection />
+          <CreativeArchiveSection />
+          <ContactSection />
+        </main>
+
+        {/* Global Telemetry Footer */}
+        <Footer onNavigateToSection={scrollToSection} />
       </div>
     </BrowserRouter>
   );

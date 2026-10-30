@@ -70,7 +70,7 @@
 
   /* Strategy option card base */
   .strategy-card {
-    @apply group cursor-pointer bg-surface-container-low hover:bg-surface-container p-space-lg rounded-xl transition-all duration-200;
+    @apply cursor-pointer bg-surface-container-low hover:bg-surface-container p-space-lg rounded-xl transition-all duration-200;
   }
 
   /* Strategy card selected state */
